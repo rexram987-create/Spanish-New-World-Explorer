@@ -36,10 +36,29 @@ function openCountryModal(country) {
   modalSubtitle.textContent = `${country.hebrewName} · ${country.region} · ${country.capital}`;
 
   modalBody.innerHTML = `
-    <figure class="modal-flag-wrap">
-      <img class="modal-flag" src="${country.flag.url}" alt="${country.flag.alt}" />
-      <figcaption><a href="${country.flag.source}" target="_blank" rel="noopener">${country.flag.credit}</a></figcaption>
-    </figure>
+    <section class="quick-facts">
+      <div><strong>Capital</strong><span>${country.capital}</span></div>
+      <div><strong>Region</strong><span>${country.region}</span></div>
+      <div><strong>Explorer</strong><span>${country.explorer}</span></div>
+      <div><strong>Discovery</strong><span>${country.discoveryYear}</span></div>
+      <div><strong>Life Years</strong><span>${country.explorerLifeYears}</span></div>
+    </section>
+
+    <section class="visual-panel">
+      <figure>
+        <img class="modal-flag" src="${country.flag.url}" alt="${country.flag.alt}" />
+        <figcaption><a href="${country.flag.source}" target="_blank" rel="noopener">${country.flag.credit}</a></figcaption>
+      </figure>
+      <figure>
+        <img class="emblem-image" src="${country.emblemImage.url}" alt="${country.emblemImage.alt}" />
+        <figcaption><a href="${country.emblemImage.source}" target="_blank" rel="noopener">${country.emblemImage.credit}</a></figcaption>
+      </figure>
+      <figure>
+        <img class="explorer-image" src="${country.explorerImage.url}" alt="${country.explorerImage.alt}" />
+        <figcaption><a href="${country.explorerImage.source}" target="_blank" rel="noopener">${country.explorerImage.credit}</a></figcaption>
+      </figure>
+    </section>
+
     <div class="detail-grid">
       <div class="detail-box"><strong>Explorer</strong>${country.explorer}</div>
       <div class="detail-box"><strong>Life Years</strong>${country.explorerLifeYears}</div>
