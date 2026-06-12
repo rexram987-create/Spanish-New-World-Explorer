@@ -50,6 +50,66 @@ Spanish New World Explorer הוא מיזם חינוכי־היסטורי חינמ
 
 ---
 
+## Planned Screenshots
+
+### Main Navigation Screen
+Coming Soon
+
+### Atlantic Ocean Voyage
+Coming Soon
+
+### Country Information Window
+Coming Soon
+
+### Explorer Biography Window
+Coming Soon
+
+### Historical Timeline
+Coming Soon
+
+---
+
+## Planned Destinations
+
+- Bahamas
+- Cuba
+- Dominican Republic
+- Haiti
+- Puerto Rico
+- Mexico
+- Guatemala
+- Honduras
+- Nicaragua
+- Costa Rica
+- Panama
+- Colombia
+- Venezuela
+- Ecuador
+- Peru
+- Bolivia
+- Chile
+- Argentina
+- Paraguay
+- Uruguay
+
+---
+
+## Development Progress
+
+| Feature | Status |
+|----------|----------|
+| Repository | ✅ |
+| README | ✅ |
+| Project Planning | ✅ |
+| Country Database | ⏳ |
+| 3D Ship | ⏳ |
+| Ocean Scene | ⏳ |
+| Discovery Points | ⏳ |
+| Historical Cards | ⏳ |
+| GitHub Pages | ⏳ |
+
+---
+
 ## Project Vision
 
 The goal of this project is to create a free, browser-based historical simulator in which a Spanish sailing ship travels across the Atlantic Ocean and reaches islands, coasts, and territories connected to Spanish exploration and conquest in the New World.
