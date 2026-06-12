@@ -11,10 +11,12 @@ function createCountryCard(country) {
   card.className = "country-card";
 
   card.innerHTML = `
+    <img class="country-flag" src="${country.flag.url}" alt="${country.flag.alt}" loading="lazy" />
     <h3>${country.name}</h3>
     <p><strong>Hebrew:</strong> ${country.hebrewName}</p>
     <p><strong>Explorer:</strong> ${country.explorer}</p>
     <p><strong>Discovery year:</strong> ${country.discoveryYear}</p>
+    <p class="image-credit"><a href="${country.flag.source}" target="_blank" rel="noopener">${country.flag.credit}</a></p>
     <button type="button">Open Information Card</button>
   `;
 
@@ -34,6 +36,10 @@ function openCountryModal(country) {
   modalSubtitle.textContent = `${country.hebrewName} · ${country.region} · ${country.capital}`;
 
   modalBody.innerHTML = `
+    <figure class="modal-flag-wrap">
+      <img class="modal-flag" src="${country.flag.url}" alt="${country.flag.alt}" />
+      <figcaption><a href="${country.flag.source}" target="_blank" rel="noopener">${country.flag.credit}</a></figcaption>
+    </figure>
     <div class="detail-grid">
       <div class="detail-box"><strong>Explorer</strong>${country.explorer}</div>
       <div class="detail-box"><strong>Life Years</strong>${country.explorerLifeYears}</div>
