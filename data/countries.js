@@ -11,8 +11,20 @@ const countries = [
       credit: "Flag image via FlagCDN / Flagpedia",
       source: "https://flagpedia.net/bahamas"
     },
+    emblemImage: {
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20arms%20of%20the%20Bahamas.svg",
+      alt: "Coat of arms of The Bahamas",
+      credit: "Coat of arms image via Wikimedia Commons",
+      source: "https://commons.wikimedia.org/wiki/File:Coat_of_arms_of_the_Bahamas.svg"
+    },
     explorer: "Christopher Columbus",
     explorerLifeYears: "1451–1506",
+    explorerImage: {
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20a%20Man%2C%20Said%20to%20be%20Christopher%20Columbus.jpg",
+      alt: "Portrait traditionally associated with Christopher Columbus",
+      credit: "Portrait via Wikimedia Commons",
+      source: "https://commons.wikimedia.org/wiki/File:Portrait_of_a_Man,_Said_to_be_Christopher_Columbus.jpg"
+    },
     discoveryYear: "1492",
     discoveryCircumstances: "Columbus reached the Lucayan archipelago during his first westward voyage across the Atlantic while seeking a sea route to Asia.",
     indigenousPeoples: "Lucayan Taíno communities lived in the islands before European arrival.",
@@ -33,8 +45,20 @@ const countries = [
       credit: "Flag image via FlagCDN / Flagpedia",
       source: "https://flagpedia.net/cuba"
     },
+    emblemImage: {
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20arms%20of%20Cuba.svg",
+      alt: "Coat of arms of Cuba",
+      credit: "Coat of arms image via Wikimedia Commons",
+      source: "https://commons.wikimedia.org/wiki/File:Coat_of_arms_of_Cuba.svg"
+    },
     explorer: "Christopher Columbus",
     explorerLifeYears: "1451–1506",
+    explorerImage: {
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20a%20Man%2C%20Said%20to%20be%20Christopher%20Columbus.jpg",
+      alt: "Portrait traditionally associated with Christopher Columbus",
+      credit: "Portrait via Wikimedia Commons",
+      source: "https://commons.wikimedia.org/wiki/File:Portrait_of_a_Man,_Said_to_be_Christopher_Columbus.jpg"
+    },
     discoveryYear: "1492",
     discoveryCircumstances: "Columbus reached Cuba during his first voyage and initially believed it might be part of Asia.",
     indigenousPeoples: "Taíno, Ciboney, and Guanahatabey communities lived in Cuba before Spanish colonization.",
@@ -55,8 +79,20 @@ const countries = [
       credit: "Flag image via FlagCDN / Flagpedia",
       source: "https://flagpedia.net/mexico"
     },
+    emblemImage: {
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20arms%20of%20Mexico.svg",
+      alt: "Coat of arms of Mexico",
+      credit: "Coat of arms image via Wikimedia Commons",
+      source: "https://commons.wikimedia.org/wiki/File:Coat_of_arms_of_Mexico.svg"
+    },
     explorer: "Hernán Cortés",
     explorerLifeYears: "1485–1547",
+    explorerImage: {
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Hernan%20Cortes%2C%20from%20Robert%20Horne%2C%20The%20Life%20of%20Hernan%20Cortes.jpg",
+      alt: "Portrait of Hernán Cortés",
+      credit: "Portrait via Wikimedia Commons",
+      source: "https://commons.wikimedia.org/wiki/File:Hernan_Cortes,_from_Robert_Horne,_The_Life_of_Hernan_Cortes.jpg"
+    },
     discoveryYear: "1519",
     discoveryCircumstances: "Cortés led a Spanish expedition to the coast of Mexico, which developed into the conquest of the Aztec Empire.",
     indigenousPeoples: "The region included many Indigenous civilizations, including the Mexica/Aztecs, Maya, Zapotecs, Mixtecs, and others.",
