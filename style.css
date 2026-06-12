@@ -202,8 +202,10 @@ figcaption a:hover {
   z-index: 100;
 }
 
-.hidden {
-  display: none;
+.hidden,
+.modal.hidden,
+.image-lightbox.hidden {
+  display: none !important;
 }
 
 .modal-card {
