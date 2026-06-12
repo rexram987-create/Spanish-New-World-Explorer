@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>יעדים ומדינות | מגלה העולם החדש הספרדי</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="page-header">
+    <nav class="top-nav">
+      <div class="logo">מגלה העולם החדש הספרדי</div>
+      <div class="nav-links">
+        <a href="../index.html">בית</a>
+        <a href="destinations.html">יעדים</a>
+        <a href="timeline.html">ציר זמן</a>
+        <a href="explorers.html">מגלים</a>
+        <a href="maps.html">מפות</a>
+        <a href="sources.html">מקורות</a>
+      </div>
+    </nav>
+    <section class="page-title-block">
+      <p class="eyebrow">מדינות ותחנות גילוי</p>
+      <h1>יעדים ומדינות</h1>
+      <p>כאן יוצגו המדינות והטריטוריות הקשורות למסעות הגילוי הספרדיים בעולם החדש.</p>
+    </section>
+  </header>
+
+  <main>
+    <section class="section">
+      <h2>היעדים הראשונים</h2>
+      <div id="countryGrid" class="country-grid"></div>
+    </section>
+  </main>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-card">
+      <button id="closeModal" class="close-button">×</button>
+      <h2 id="modalTitle"></h2>
+      <p id="modalSubtitle" class="modal-subtitle"></p>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <div id="imageLightbox" class="image-lightbox hidden">
+    <div class="image-lightbox-card">
+      <button id="closeLightbox" class="close-button">×</button>
+      <img id="lightboxImage" src="" alt="" />
+      <p id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>מגלה העולם החדש הספרדי — פרויקט חינוכי חינמי.</p>
+  </footer>
+
+  <script src="../data/countries.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>
