@@ -137,6 +137,16 @@ button {
   background: rgba(255, 255, 255, 0.08);
 }
 
+.zoomable-image {
+  cursor: zoom-in;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.zoomable-image:hover {
+  transform: scale(1.02);
+  border-color: rgba(242, 184, 75, 0.7);
+}
+
 .country-card h3 {
   margin-top: 0;
   color: var(--accent);
@@ -279,6 +289,40 @@ figcaption a:hover {
 .explorer-image {
   object-fit: cover;
   object-position: top center;
+}
+
+.image-lightbox {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 18px;
+  background: rgba(0, 0, 0, 0.86);
+  z-index: 200;
+}
+
+.image-lightbox-card {
+  width: min(1100px, 96vw);
+  max-height: 92vh;
+  position: relative;
+  padding: 18px;
+  border-radius: 24px;
+  background: #081522;
+  border: 1px solid var(--border);
+}
+
+.image-lightbox-card img {
+  width: 100%;
+  max-height: 78vh;
+  object-fit: contain;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+#lightboxCaption {
+  margin: 10px 42px 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
 }
 
 .detail-grid {
