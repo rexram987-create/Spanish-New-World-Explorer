@@ -5,6 +5,12 @@ const countries = [
     hebrewName: "איי בהאמה",
     region: "Caribbean",
     capital: "Nassau",
+    flag: {
+      url: "https://flagcdn.com/w640/bs.png",
+      alt: "Flag of The Bahamas",
+      credit: "Flag image via FlagCDN / Flagpedia",
+      source: "https://flagpedia.net/bahamas"
+    },
     explorer: "Christopher Columbus",
     explorerLifeYears: "1451–1506",
     discoveryYear: "1492",
@@ -21,6 +27,12 @@ const countries = [
     hebrewName: "קובה",
     region: "Caribbean",
     capital: "Havana",
+    flag: {
+      url: "https://flagcdn.com/w640/cu.png",
+      alt: "Flag of Cuba",
+      credit: "Flag image via FlagCDN / Flagpedia",
+      source: "https://flagpedia.net/cuba"
+    },
     explorer: "Christopher Columbus",
     explorerLifeYears: "1451–1506",
     discoveryYear: "1492",
@@ -37,6 +49,12 @@ const countries = [
     hebrewName: "מקסיקו",
     region: "North America",
     capital: "Mexico City",
+    flag: {
+      url: "https://flagcdn.com/w640/mx.png",
+      alt: "Flag of Mexico",
+      credit: "Flag image via FlagCDN / Flagpedia",
+      source: "https://flagpedia.net/mexico"
+    },
     explorer: "Hernán Cortés",
     explorerLifeYears: "1485–1547",
     discoveryYear: "1519",
