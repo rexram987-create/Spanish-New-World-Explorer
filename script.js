@@ -5,13 +5,17 @@ const modalSubtitle = document.getElementById("modalSubtitle");
 const modalBody = document.getElementById("modalBody");
 const closeModal = document.getElementById("closeModal");
 const startButton = document.getElementById("startButton");
+const imageLightbox = document.getElementById("imageLightbox");
+const closeLightbox = document.getElementById("closeLightbox");
+const lightboxImage = document.getElementById("lightboxImage");
+const lightboxCaption = document.getElementById("lightboxCaption");
 
 function createCountryCard(country) {
   const card = document.createElement("article");
   card.className = "country-card";
 
   card.innerHTML = `
-    <img class="country-flag" src="${country.flag.url}" alt="${country.flag.alt}" loading="lazy" />
+    <img class="country-flag zoomable-image" src="${country.flag.url}" alt="${country.flag.alt}" loading="lazy" data-caption="${country.flag.alt}" />
     <h3>${country.name}</h3>
     <p><strong>Hebrew:</strong> ${country.hebrewName}</p>
     <p><strong>Explorer:</strong> ${country.explorer}</p>
@@ -46,15 +50,15 @@ function openCountryModal(country) {
 
     <section class="visual-panel">
       <figure>
-        <img class="modal-flag" src="${country.flag.url}" alt="${country.flag.alt}" />
+        <img class="modal-flag zoomable-image" src="${country.flag.url}" alt="${country.flag.alt}" data-caption="${country.flag.alt}" />
         <figcaption><a href="${country.flag.source}" target="_blank" rel="noopener">${country.flag.credit}</a></figcaption>
       </figure>
       <figure>
-        <img class="emblem-image" src="${country.emblemImage.url}" alt="${country.emblemImage.alt}" />
+        <img class="emblem-image zoomable-image" src="${country.emblemImage.url}" alt="${country.emblemImage.alt}" data-caption="${country.emblemImage.alt}" />
         <figcaption><a href="${country.emblemImage.source}" target="_blank" rel="noopener">${country.emblemImage.credit}</a></figcaption>
       </figure>
       <figure>
-        <img class="explorer-image" src="${country.explorerImage.url}" alt="${country.explorerImage.alt}" />
+        <img class="explorer-image zoomable-image" src="${country.explorerImage.url}" alt="${country.explorerImage.alt}" data-caption="${country.explorerImage.alt}" />
         <figcaption><a href="${country.explorerImage.source}" target="_blank" rel="noopener">${country.explorerImage.credit}</a></figcaption>
       </figure>
     </section>
@@ -79,10 +83,45 @@ function closeCountryModal() {
   modal.classList.add("hidden");
 }
 
+function openImageLightbox(image) {
+  lightboxImage.src = image.src;
+  lightboxImage.alt = image.alt || "Expanded image";
+  lightboxCaption.textContent = image.dataset.caption || image.alt || "Expanded image";
+  imageLightbox.classList.remove("hidden");
+}
+
+function closeImageLightbox() {
+  imageLightbox.classList.add("hidden");
+  lightboxImage.src = "";
+  lightboxImage.alt = "";
+  lightboxCaption.textContent = "";
+}
+
 closeModal.addEventListener("click", closeCountryModal);
+closeLightbox.addEventListener("click", closeImageLightbox);
 
 modal.addEventListener("click", (event) => {
   if (event.target === modal) {
+    closeCountryModal();
+  }
+});
+
+imageLightbox.addEventListener("click", (event) => {
+  if (event.target === imageLightbox) {
+    closeImageLightbox();
+  }
+});
+
+document.addEventListener("click", (event) => {
+  const image = event.target.closest(".zoomable-image");
+  if (image) {
+    openImageLightbox(image);
+  }
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    closeImageLightbox();
     closeCountryModal();
   }
 });
