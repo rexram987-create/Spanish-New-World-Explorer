@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spanish New World Explorer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="top-nav">
+      <div class="logo">Spanish New World Explorer</div>
+      <div class="nav-links">
+        <a href="#overview">Overview</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#data-preview">Data</a>
+      </div>
+    </nav>
+
+    <section class="hero-content">
+      <p class="eyebrow">Interactive Historical Simulator</p>
+      <h1>Explore the Spanish Voyages to the New World</h1>
+      <p>
+        Sail a Spanish ship across the Atlantic, discover historical destinations,
+        and open rich information cards about flags, national emblems, etymology,
+        explorers, Indigenous peoples, and colonial history.
+      </p>
+      <button id="startButton">Start Preview</button>
+    </section>
+  </header>
+
+  <main>
+    <section id="overview" class="section">
+      <h2>Project Overview</h2>
+      <p>
+        This project will become a free browser-based 3D educational experience.
+        The first version begins as a clean static prototype and will later grow into
+        a full Three.js sailing simulator.
+      </p>
+    </section>
+
+    <section id="destinations" class="section">
+      <h2>First Destinations</h2>
+      <div id="countryGrid" class="country-grid"></div>
+    </section>
+
+    <section id="data-preview" class="section">
+      <h2>Information Structure</h2>
+      <div class="info-list">
+        <span>Modern country</span>
+        <span>Flag</span>
+        <span>Coat of arms</span>
+        <span>Etymology</span>
+        <span>Vexillology</span>
+        <span>Explorer</span>
+        <span>Life years</span>
+        <span>Discovery year</span>
+        <span>Discovery circumstances</span>
+        <span>Indigenous peoples</span>
+      </div>
+    </section>
+  </main>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-card">
+      <button id="closeModal" class="close-button">×</button>
+      <h2 id="modalTitle"></h2>
+      <p id="modalSubtitle" class="modal-subtitle"></p>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Spanish New World Explorer — Free educational project.</p>
+  </footer>
+
+  <script src="data/countries.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
