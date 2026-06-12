@@ -88,10 +88,10 @@ const countries = [
     explorer: "Hernán Cortés",
     explorerLifeYears: "1485–1547",
     explorerImage: {
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Hernan%20Cortes%2C%20from%20Robert%20Horne%2C%20The%20Life%20of%20Hernan%20Cortes.jpg",
+      url: "assets/explorers/hernan-cortes-portrait.jpg",
       alt: "Portrait of Hernán Cortés",
-      credit: "Portrait via Wikimedia Commons",
-      source: "https://commons.wikimedia.org/wiki/File:Hernan_Cortes,_from_Robert_Horne,_The_Life_of_Hernan_Cortes.jpg"
+      credit: "Hernán Cortés portrait, local project asset",
+      source: "assets/explorers/hernan-cortes-portrait.jpg"
     },
     discoveryYear: "1519",
     discoveryCircumstances: "Cortés led a Spanish expedition to the coast of Mexico, which developed into the conquest of the Aztec Empire.",
