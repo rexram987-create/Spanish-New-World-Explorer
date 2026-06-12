@@ -1,4 +1,5 @@
 const countryGrid = document.getElementById("countryGrid");
+const timelineGrid = document.getElementById("timelineGrid");
 const modal = document.getElementById("modal");
 const modalTitle = document.getElementById("modalTitle");
 const modalSubtitle = document.getElementById("modalSubtitle");
@@ -9,6 +10,44 @@ const imageLightbox = document.getElementById("imageLightbox");
 const closeLightbox = document.getElementById("closeLightbox");
 const lightboxImage = document.getElementById("lightboxImage");
 const lightboxCaption = document.getElementById("lightboxCaption");
+
+const timelineEvents = [
+  {
+    year: "1492",
+    title: "המסע הראשון של קולומבוס",
+    location: "ספרד → האיים הקריביים",
+    summary: "כריסטופר קולומבוס יוצא מערבה בחיפוש אחר נתיב ימי לאסיה ומגיע לאיים הקריביים.",
+    details: "המסע הראשון של קולומבוס בשנת 1492 פתח את תקופת המפגש האירופי הרחב עם העולם החדש. מבחינת הספרדים, זה היה תחילת עידן של חקר, מסחר, קולוניזציה וכיבוש. מבחינת העמים הילידיים, זו הייתה תחילתו של שינוי היסטורי עמוק וכואב."
+  },
+  {
+    year: "1492",
+    title: "הגעה לאיי בהאמה",
+    location: "איי בהאמה",
+    summary: "קולומבוס מגיע לארכיפלג הלוקאיאני, המזוהה בדרך כלל עם הנחיתה הראשונה במסעו.",
+    details: "הנחיתה הראשונה של קולומבוס בעולם החדש מזוהה בדרך כלל עם אחד מאיי בהאמה, אם כי זהות האי המדויקת עדיין נתונה לוויכוח מחקרי. באזור חיו קהילות לוקאיאן־טאינו לפני הגעת האירופים."
+  },
+  {
+    year: "1492",
+    title: "קולומבוס מגיע לקובה",
+    location: "קובה",
+    summary: "קולומבוס מגיע לקובה במהלך מסעו הראשון וסבור כי ייתכן שמדובר באזור הקרוב לאסיה.",
+    details: "קובה הפכה בהמשך לאחת הטריטוריות הספרדיות החשובות ביותר באיים הקריביים. לפני הקולוניזציה הספרדית חיו באי קהילות טאינו, סיבוני וגואנאהטביי."
+  },
+  {
+    year: "1519",
+    title: "משלחת קורטס למקסיקו",
+    location: "חופי מקסיקו",
+    summary: "הרנאן קורטס מוביל משלחת ספרדית אל חופי מקסיקו.",
+    details: "הגעתו של קורטס למקסיקו בשנת 1519 הובילה בהמשך למסע הכיבוש של האימפריה האצטקית. האירוע שינה את ההיסטוריה של אמריקה, ספרד והעולם כולו."
+  },
+  {
+    year: "1521",
+    title: "נפילת טנוצ'טיטלאן",
+    location: "עמק מקסיקו",
+    summary: "בירת האימפריה האצטקית נופלת לידי הכוחות הספרדיים ובעלי בריתם הילידיים.",
+    details: "נפילת טנוצ'טיטלאן בשנת 1521 סימנה את סופה של האימפריה האצטקית ותחילת התבססותה של ספרד החדשה. האירוע כלל מלחמה, בריתות פוליטיות, מגפות, מצור ושינוי עמוק במבנה השלטוני והתרבותי של האזור."
+  }
+];
 
 function createCountryCard(country) {
   const card = document.createElement("article");
@@ -32,6 +71,30 @@ function renderCountries() {
   countryGrid.innerHTML = "";
   countries.forEach((country) => {
     countryGrid.appendChild(createCountryCard(country));
+  });
+}
+
+function createTimelineCard(event) {
+  const card = document.createElement("article");
+  card.className = "timeline-card";
+
+  card.innerHTML = `
+    <span class="timeline-year">${event.year}</span>
+    <h3>${event.title}</h3>
+    <p class="timeline-location">${event.location}</p>
+    <p>${event.summary}</p>
+    <button type="button">פתח אירוע</button>
+  `;
+
+  card.querySelector("button").addEventListener("click", () => openTimelineModal(event));
+  return card;
+}
+
+function renderTimeline() {
+  if (!timelineGrid) return;
+  timelineGrid.innerHTML = "";
+  timelineEvents.forEach((event) => {
+    timelineGrid.appendChild(createTimelineCard(event));
   });
 }
 
@@ -76,6 +139,18 @@ function openCountryModal(country) {
     </div>
   `;
 
+  modal.classList.remove("hidden");
+}
+
+function openTimelineModal(event) {
+  modalTitle.textContent = event.title;
+  modalSubtitle.textContent = `${event.year} · ${event.location}`;
+  modalBody.innerHTML = `
+    <div class="timeline-modal-content">
+      <p class="timeline-modal-year">${event.year}</p>
+      <p>${event.details}</p>
+    </div>
+  `;
   modal.classList.remove("hidden");
 }
 
@@ -131,3 +206,4 @@ startButton.addEventListener("click", () => {
 });
 
 renderCountries();
+renderTimeline();
