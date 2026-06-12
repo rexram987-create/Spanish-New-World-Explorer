@@ -11,88 +11,74 @@
     <nav class="top-nav">
       <div class="logo">מגלה העולם החדש הספרדי</div>
       <div class="nav-links">
-        <a href="#overview">סקירה</a>
-        <a href="#destinations">יעדים</a>
-        <a href="#timeline">ציר זמן</a>
-        <a href="#data-preview">מידע</a>
+        <a href="index.html">בית</a>
+        <a href="pages/destinations.html">יעדים</a>
+        <a href="pages/timeline.html">ציר זמן</a>
+        <a href="pages/explorers.html">מגלים</a>
+        <a href="pages/maps.html">מפות</a>
+        <a href="pages/sources.html">מקורות</a>
       </div>
     </nav>
 
     <section class="hero-content">
-      <p class="eyebrow">סימולטור היסטורי אינטראקטיבי</p>
+      <p class="eyebrow">מוזיאון היסטורי אינטראקטיבי</p>
       <h1>מסע בעקבות מסעות הגילוי הספרדיים בעולם החדש</h1>
       <p>
-        הפליגו עם ספינת מפרש ספרדית ברחבי האוקיינוס האטלנטי, גלו יעדים היסטוריים,
-        ופתחו כרטיסי מידע עשירים על דגלים, סמלי מדינה, אטימולוגיה,
-        מגלים, עמים ילידיים והיסטוריה קולוניאלית.
+        פרויקט חינוכי חינמי המציג את מסעות הגילוי הספרדיים, היעדים ההיסטוריים,
+        המגלים, הדגלים, הסמלים, האטימולוגיה, העמים הילידיים והאירועים המרכזיים
+        שעיצבו את המפגש בין אירופה לעולם החדש.
       </p>
-      <button id="startButton">התחל סיור</button>
+      <div class="home-actions">
+        <a class="primary-link" href="pages/destinations.html">התחל ביעדים</a>
+        <a class="secondary-link" href="pages/timeline.html">עבור לציר הזמן</a>
+      </div>
     </section>
   </header>
 
   <main>
-    <section id="overview" class="section">
-      <h2>סקירת הפרויקט</h2>
+    <section class="section">
+      <h2>מבוא לפרויקט</h2>
       <p>
-        הפרויקט הזה נבנה כחוויה חינוכית תלת־ממדית חינמית בדפדפן.
-        הגרסה הראשונה היא אב־טיפוס נקי, ובהמשך היא תתפתח לסימולטור הפלגה מלא
-        המבוסס על Three.js.
+        דף הבית משמש כמבוא בלבד. כל נושא באתר יקבל דף עצמאי משלו:
+        יעדים, ציר זמן, מגלים, מפות ומקורות. כך ניתן יהיה להרחיב את הפרויקט
+        בהדרגה בלי להעמיס את כל המידע על עמוד אחד.
       </p>
     </section>
 
-    <section id="destinations" class="section">
-      <h2>היעדים הראשונים</h2>
-      <div id="countryGrid" class="country-grid"></div>
-    </section>
-
-    <section id="timeline" class="section">
-      <h2>ציר זמן היסטורי</h2>
-      <p>
-        ציר הזמן מציג אבני דרך מרכזיות במסעות הגילוי והכיבוש הספרדיים בעולם החדש.
-        לחצו על אירוע כדי לפתוח חלון מידע קצר.
-      </p>
-      <div id="timelineGrid" class="timeline-grid"></div>
-    </section>
-
-    <section id="data-preview" class="section">
-      <h2>מבנה המידע</h2>
-      <div class="info-list">
-        <span>מדינה מודרנית</span>
-        <span>דגל</span>
-        <span>סמל מדינה</span>
-        <span>אטימולוגיה</span>
-        <span>וקסילולוגיה</span>
-        <span>מגלה</span>
-        <span>שנות חיים</span>
-        <span>שנת גילוי</span>
-        <span>נסיבות הגילוי</span>
-        <span>עמים ילידיים</span>
+    <section class="section">
+      <h2>שערי כניסה</h2>
+      <div class="portal-grid">
+        <a class="portal-card" href="pages/destinations.html">
+          <span>🌎</span>
+          <h3>יעדים ומדינות</h3>
+          <p>דגלים, סמלי מדינה, אטימולוגיה, וקסילולוגיה ומידע היסטורי.</p>
+        </a>
+        <a class="portal-card" href="pages/timeline.html">
+          <span>📜</span>
+          <h3>ציר זמן</h3>
+          <p>אירועים מרכזיים במסעות הגילוי, הכיבוש וההתיישבות הספרדית.</p>
+        </a>
+        <a class="portal-card" href="pages/explorers.html">
+          <span>🧭</span>
+          <h3>מגלים</h3>
+          <p>ביוגרפיות, ילדות, תחילת דרך, מסעות ומורשת היסטורית.</p>
+        </a>
+        <a class="portal-card" href="pages/maps.html">
+          <span>🗺️</span>
+          <h3>מפות</h3>
+          <p>בעתיד: מסלולי הפלגה ומפה אינטראקטיבית של העולם החדש.</p>
+        </a>
+        <a class="portal-card" href="pages/sources.html">
+          <span>📚</span>
+          <h3>מקורות</h3>
+          <p>רשימת מקורות, קרדיטים, דגלים, סמלי מדינה ותמונות.</p>
+        </a>
       </div>
     </section>
   </main>
 
-  <div id="modal" class="modal hidden">
-    <div class="modal-card">
-      <button id="closeModal" class="close-button">×</button>
-      <h2 id="modalTitle"></h2>
-      <p id="modalSubtitle" class="modal-subtitle"></p>
-      <div id="modalBody"></div>
-    </div>
-  </div>
-
-  <div id="imageLightbox" class="image-lightbox hidden">
-    <div class="image-lightbox-card">
-      <button id="closeLightbox" class="close-button">×</button>
-      <img id="lightboxImage" src="" alt="" />
-      <p id="lightboxCaption"></p>
-    </div>
-  </div>
-
   <footer>
     <p>מגלה העולם החדש הספרדי — פרויקט חינוכי חינמי.</p>
   </footer>
-
-  <script src="data/countries.js"></script>
-  <script src="script.js"></script>
 </body>
 </html>
