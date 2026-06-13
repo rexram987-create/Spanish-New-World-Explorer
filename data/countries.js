@@ -76,6 +76,7 @@ const countries = [
     englishName: "Cuba",
     region: "האיים הקריביים",
     capital: "הוואנה",
+    detailPage: "destinations/cuba.html",
     flag: {
       url: "https://flagcdn.com/w640/cu.png",
       alt: "דגל קובה",
