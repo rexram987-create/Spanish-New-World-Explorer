@@ -2,29 +2,77 @@
 <html lang="he" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
   <title>היספניולה | מגלה העולם החדש הספרדי</title>
-  <link rel="stylesheet" href="../../style.css?v=3" />
+  <link rel="stylesheet" href="../../style.css?v=4" />
   <style>
+    html,
+    body {
+      width: 100% !important;
+      max-width: 100% !important;
+      overflow-x: hidden !important;
+      text-size-adjust: 100% !important;
+      -webkit-text-size-adjust: 100% !important;
+    }
+
+    body {
+      min-width: 0 !important;
+    }
+
+    main,
+    main .section {
+      width: 100% !important;
+      max-width: 100vw !important;
+      padding-left: 18px !important;
+      padding-right: 18px !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+
+    main .visual-panel,
+    main .detail-grid {
+      display: grid !important;
+      grid-template-columns: 1fr !important;
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+
+    main figure,
+    main img,
+    main .zoomable-image {
+      width: 100% !important;
+      max-width: 100% !important;
+      height: auto !important;
+      min-width: 0 !important;
+      object-fit: contain !important;
+    }
+
     main .section p,
-    main .detail-box,
+    main .detail-box {
+      font-size: 22px !important;
+      line-height: 1.95 !important;
+      text-align: right !important;
+    }
+
     main figcaption,
     .page-title-block p {
-      font-size: 1.22rem !important;
-      line-height: 1.9 !important;
+      font-size: 18px !important;
+      line-height: 1.8 !important;
     }
+
     main .detail-box strong {
-      font-size: 1.08rem !important;
+      font-size: 21px !important;
+      margin-bottom: 8px !important;
     }
+
     main h2 {
-      font-size: 2.25rem !important;
+      font-size: 32px !important;
+      line-height: 1.25 !important;
+      text-align: right !important;
     }
-    @media (max-width: 680px) {
-      main .section p,
-      main .detail-box,
-      .page-title-block p {
-        font-size: 1.26rem !important;
-      }
+
+    .page-title-block h1 {
+      font-size: clamp(42px, 11vw, 72px) !important;
     }
   </style>
 </head>
