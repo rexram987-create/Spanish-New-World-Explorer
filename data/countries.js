@@ -1,5 +1,41 @@
 const countries = [
   {
+    id: "hispaniola",
+    name: "היספניולה",
+    englishName: "Hispaniola",
+    region: "האיים הקריביים",
+    capital: "סנטו דומינגו ופורט־או־פרנס כיום",
+    detailPage: "destinations/hispaniola.html",
+    flag: {
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Hispaniola%20lrg.jpg",
+      alt: "מפת היספניולה",
+      credit: "מפה דרך Wikimedia Commons",
+      source: "https://commons.wikimedia.org/wiki/File:Hispaniola_lrg.jpg"
+    },
+    emblemImage: {
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Hispaniola%20lrg.jpg",
+      alt: "מפת היספניולה",
+      credit: "מפה דרך Wikimedia Commons",
+      source: "https://commons.wikimedia.org/wiki/File:Hispaniola_lrg.jpg"
+    },
+    explorer: "כריסטופר קולומבוס",
+    explorerEnglish: "Christopher Columbus",
+    explorerLifeYears: "1451–1506",
+    explorerImage: {
+      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20a%20Man%2C%20Said%20to%20be%20Christopher%20Columbus.jpg",
+      alt: "דיוקן המיוחס באופן מסורתי לכריסטופר קולומבוס",
+      credit: "דיוקן דרך Wikimedia Commons",
+      source: "https://commons.wikimedia.org/wiki/File:Portrait_of_a_Man,_Said_to_be_Christopher_Columbus.jpg"
+    },
+    discoveryYear: "1492",
+    discoveryCircumstances: "קולומבוס הגיע להיספניולה במסעו הראשון, התרשם מגודל האי וממשאביו, ובה הוקמה לה נבידד — ההתיישבות הספרדית הראשונה באמריקה.",
+    indigenousPeoples: "לפני הגעת האירופים חיו באי בעיקר קהילות טאינו.",
+    etymology: "השם Hispaniola נובע מן השם הספרדי La Española, כלומר הספרדית או ספרד הקטנה. שמות ילידיים הקשורים לאי כוללים Ayiti ו־Quisqueya.",
+    vexillology: "כיום האי מחולק בין שתי מדינות, האיטי והרפובליקה הדומיניקנית, שלכל אחת דגל וסמל משלה.",
+    emblem: "להיספניולה כאי אין סמל מדינה אחד, מפני שהיא מחולקת כיום בין שתי מדינות ריבוניות.",
+    historicalNote: "היספניולה הייתה בסיס מרכזי להתפשטות הספרדית המוקדמת בעולם החדש."
+  },
+  {
     id: "bahamas",
     name: "איי בהאמה",
     englishName: "The Bahamas",
