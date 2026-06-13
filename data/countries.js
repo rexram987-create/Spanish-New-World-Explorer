@@ -113,6 +113,7 @@ const countries = [
     englishName: "Mexico",
     region: "אמריקה הצפונית",
     capital: "מקסיקו סיטי",
+    detailPage: "destinations/mexico.html",
     flag: {
       url: "https://flagcdn.com/w640/mx.png",
       alt: "דגל מקסיקו",
