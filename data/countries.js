@@ -41,6 +41,7 @@ const countries = [
     englishName: "The Bahamas",
     region: "האיים הקריביים",
     capital: "נסאו",
+    detailPage: "destinations/bahamas.html",
     flag: {
       url: "https://flagcdn.com/w640/bs.png",
       alt: "דגל איי בהאמה",
