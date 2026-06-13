@@ -113,6 +113,17 @@ button {
   padding: 70px 24px;
 }
 
+.section p,
+.page-title-block p,
+.visual-panel,
+.detail-box {
+  font-size: 1.08rem;
+}
+
+.section p {
+  line-height: 1.85;
+}
+
 .country-grid,
 .timeline-grid {
   display: grid;
@@ -127,6 +138,11 @@ button {
   border-radius: 22px;
   padding: 22px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.country-card p,
+.timeline-card p {
+  font-size: 1rem;
 }
 
 .timeline-card {
@@ -222,7 +238,7 @@ button {
 
 .image-credit,
 figcaption {
-  font-size: 0.78rem;
+  font-size: 0.9rem;
   color: var(--muted);
 }
 
@@ -312,7 +328,7 @@ figcaption a:hover {
 .quick-facts strong {
   display: block;
   color: var(--accent);
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .quick-facts span {
@@ -382,7 +398,7 @@ figcaption a:hover {
 #lightboxCaption {
   margin: 10px 42px 0 0;
   color: var(--muted);
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 .detail-grid {
@@ -392,16 +408,18 @@ figcaption a:hover {
 }
 
 .detail-box {
-  padding: 14px;
+  padding: 16px;
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.07);
   border: 1px solid var(--border);
+  line-height: 1.75;
 }
 
 .detail-box strong {
   display: block;
   color: var(--accent);
   margin-bottom: 4px;
+  font-size: 1.02rem;
 }
 
 footer {
@@ -431,5 +449,15 @@ footer {
   .hero-content {
     margin-top: 70px;
     text-align: left;
+  }
+
+  .section {
+    padding: 48px 18px;
+  }
+
+  .section p,
+  .detail-box,
+  .page-title-block p {
+    font-size: 1.12rem;
   }
 }
