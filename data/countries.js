@@ -187,5 +187,26 @@ const countries = [
     vexillology: "דגל ונצואלה כולל צהוב, כחול ואדום וקשת כוכבים המסמלת מחוזות היסטוריים ואחדות לאומית.",
     emblem: "סמל ונצואלה כולל סוס לבן, שיבולים, נשק ודגלים, ומבטא חירות, שפע ועצמאות.",
     historicalNote: "ונצואלה ממשיכה את המסע מזרחה לאורך החוף הקריבי של דרום אמריקה וקושרת את הסיפור לשם אמריקה."
+  },
+  {
+    id: "trinidad-tobago",
+    name: "טרינידד וטובגו",
+    englishName: "Trinidad and Tobago",
+    region: "האיים הקריביים",
+    capital: "פורט אוף ספיין",
+    detailPage: "destinations/trinidad-tobago.html",
+    flag: { url: "https://flagcdn.com/w640/tt.png", alt: "דגל טרינידד וטובגו", credit: "תמונת דגל דרך FlagCDN / Flagpedia", source: "https://flagpedia.net/trinidad-and-tobago" },
+    emblemImage: { url: "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20arms%20of%20Trinidad%20and%20Tobago.svg", alt: "סמל טרינידד וטובגו", credit: "תמונת סמל דרך Wikimedia Commons", source: "https://commons.wikimedia.org/wiki/File:Coat_of_arms_of_Trinidad_and_Tobago.svg" },
+    explorer: "כריסטופר קולומבוס",
+    explorerEnglish: "Christopher Columbus",
+    explorerLifeYears: "1451–1506",
+    explorerImage: { url: "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20a%20Man%2C%20Said%20to%20be%20Christopher%20Columbus.jpg", alt: "דיוקן המיוחס באופן מסורתי לכריסטופר קולומבוס", credit: "דיוקן דרך Wikimedia Commons", source: "https://commons.wikimedia.org/wiki/File:Portrait_of_a_Man,_Said_to_be_Christopher_Columbus.jpg" },
+    discoveryYear: "1498",
+    discoveryCircumstances: "קולומבוס הגיע לטרינידד במסעו השלישי, סמוך לחופי ונצואלה ולשפך האורינוקו.",
+    indigenousPeoples: "לפני הגעת האירופים חיו באזור עמים אראוואקיים וקאריביים, עם קשרים לחופי דרום אמריקה.",
+    etymology: "Trinidad פירושו השילוש הקדוש; Tobago נקשר למסורות לשוניות סביב טבק ושמות ילידיים.",
+    vexillology: "דגל טרינידד וטובגו כולל אדום, שחור ולבן, המסמלים חיוניות, חוזק, ים והרמוניה.",
+    emblem: "סמל המדינה כולל קוליברים, ספינות וציפורי ים, ומחבר בין טבע, קולומבוס והמרחב הקריבי.",
+    historicalNote: "טרינידד וטובגו מחברת בין מסעו השלישי של קולומבוס, ונצואלה, האורינוקו וההבנה שאמריקה היא יבשת."
   }
 ];
