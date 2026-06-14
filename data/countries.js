@@ -221,7 +221,7 @@ const countries = [
     explorer: "סר וולטר ראלי",
     explorerEnglish: "Sir Walter Raleigh",
     explorerLifeYears: "1552–1618",
-    explorerImage: { url: "https://commons.wikimedia.org/wiki/Special:FilePath/Sir%20Walter%20Raleigh%20by%20%27H%27%20monogrammist.jpg", alt: "סר וולטר ראלי", credit: "דיוקן דרך Wikimedia Commons", source: "https://commons.wikimedia.org/wiki/File:Sir_Walter_Raleigh_by_%27H%27_monogrammist.jpg" },
+    explorerImage: { url: "https://en.wikipedia.org/wiki/Special:FilePath/Walter%20Raleigh.jpg", alt: "סר וולטר ראלי", credit: "דיוקן דרך Wikipedia / Wikimedia", source: "https://en.wikipedia.org/wiki/Walter_Raleigh" },
     discoveryYear: "המאה ה־16",
     discoveryCircumstances: "החוף והנהרות של גיאנה נודעו לאירופים בהדרגה; ראלי מזוהה במיוחד עם מסעות החיפוש אחר אל דוראדו באזור.",
     indigenousPeoples: "באזור חיו עמים ילידיים רבים, ובהם קבוצות אראוואקיות וקאריביות לאורך החופים, הנהרות והיערות.",
@@ -229,5 +229,26 @@ const countries = [
     vexillology: "דגל גיאנה, 'ראש החץ הזהוב', כולל ירוק, זהב, אדום, לבן ושחור המסמלים טבע, עושר, מים, כוח ונחישות.",
     emblem: "סמל גיאנה כולל יגואר, פרח מים, כלים ילידיים וסמלים של נהרות, טבע ומשאבים.",
     historicalNote: "גיאנה מחברת בין ונצואלה, טרינידד, האורינוקו ואגדת אל דוראדו, וממשיכה את המסע מזרחה לאורך חוף הגיאנות."
+  },
+  {
+    id: "suriname",
+    name: "סורינאם",
+    englishName: "Suriname",
+    region: "דרום אמריקה",
+    capital: "פרמריבו",
+    detailPage: "destinations/suriname.html",
+    flag: { url: "https://flagcdn.com/w640/sr.png", alt: "דגל סורינאם", credit: "תמונת דגל דרך FlagCDN / Flagpedia", source: "https://flagpedia.net/suriname" },
+    emblemImage: { url: "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20arms%20of%20Suriname.svg", alt: "סמל סורינאם", credit: "תמונת סמל דרך Wikimedia Commons", source: "https://commons.wikimedia.org/wiki/File:Coat_of_arms_of_Suriname.svg" },
+    explorer: "מסעות אירופיים לאורך חוף הגיאנות",
+    explorerEnglish: "European voyages along the Guianas coast",
+    explorerLifeYears: "המאה ה־16 ואילך",
+    explorerImage: { url: "https://commons.wikimedia.org/wiki/Special:FilePath/Paramaribo%20Waterkant%202022.jpg", alt: "פרמריבו, סורינאם", credit: "תמונה דרך Wikimedia Commons", source: "https://commons.wikimedia.org/wiki/File:Paramaribo_Waterkant_2022.jpg" },
+    discoveryYear: "המאה ה־16",
+    discoveryCircumstances: "סורינאם נודעה לאירופים בהדרגה כחלק מחוף הגיאנות, דרך מסעות חוף, נהרות ותחרות קולוניאלית.",
+    indigenousPeoples: "באזור חיו עמים ילידיים רבים, ובהם קבוצות אראוואקיות וקאריביות לאורך החופים, הנהרות והיערות.",
+    etymology: "השם Suriname נקשר לשם מקומי או לקבוצה ילידית באזור, וכן לנהר סורינאם.",
+    vexillology: "דגל סורינאם כולל ירוק, לבן, אדום וכוכב זהוב, המסמלים טבע, שלום, התקדמות, אחדות ותקווה.",
+    emblem: "סמל סורינאם משלב מגן, דמויות תומכות, ספינה ודקל, ומבטא ים, טבע, עמים מקומיים וריבונות.",
+    historicalNote: "סורינאם ממשיכה את המסע מגיאנה אל גיאנה הצרפתית ושפך האמזונס לאורך חוף הגיאנות."
   }
 ];
