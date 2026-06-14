@@ -250,5 +250,26 @@ const countries = [
     vexillology: "דגל סורינאם כולל ירוק, לבן, אדום וכוכב זהוב, המסמלים טבע, שלום, התקדמות, אחדות ותקווה.",
     emblem: "סמל סורינאם משלב מגן, דמויות תומכות, ספינה ודקל, ומבטא ים, טבע, עמים מקומיים וריבונות.",
     historicalNote: "סורינאם ממשיכה את המסע מגיאנה אל גיאנה הצרפתית ושפך האמזונס לאורך חוף הגיאנות."
+  },
+  {
+    id: "french-guiana",
+    name: "גיאנה הצרפתית",
+    englishName: "French Guiana",
+    region: "דרום אמריקה",
+    capital: "קאיין",
+    detailPage: "destinations/french-guiana.html",
+    flag: { url: "https://flagcdn.com/w640/gf.png", alt: "דגל גיאנה הצרפתית", credit: "תמונת דגל דרך FlagCDN / Flagpedia", source: "https://flagpedia.net/french-guiana" },
+    emblemImage: { url: "https://commons.wikimedia.org/wiki/Special:FilePath/Blason%20Guyane.svg", alt: "סמל גיאנה הצרפתית", credit: "תמונת סמל דרך Wikimedia Commons", source: "https://commons.wikimedia.org/wiki/File:Blason_Guyane.svg" },
+    explorer: "מסעות צרפתיים ואירופיים לאורך חוף הגיאנות",
+    explorerEnglish: "French and European voyages along the Guianas coast",
+    explorerLifeYears: "המאה ה־16 ואילך",
+    explorerImage: { url: "https://commons.wikimedia.org/wiki/Special:FilePath/Cayenne%20-%20Place%20des%20Palmistes.jpg", alt: "קאיין, גיאנה הצרפתית", credit: "תמונה דרך Wikimedia Commons", source: "https://commons.wikimedia.org/wiki/File:Cayenne_-_Place_des_Palmistes.jpg" },
+    discoveryYear: "המאה ה־16",
+    discoveryCircumstances: "גיאנה הצרפתית נודעה לאירופים בהדרגה כחלק מחוף הגיאנות, ובהמשך הפכה למרחב צרפתי באמריקה הדרומית.",
+    indigenousPeoples: "באזור חיו עמים ילידיים ובהם קאלינה, וואיאנה וקבוצות נוספות לאורך הנהרות, החופים והיערות.",
+    etymology: "Guyane קשור למרחב הגיאנות ולשמות ילידיים; Française מציין את הקשר הפוליטי והקולוניאלי לצרפת.",
+    vexillology: "הדגל הרשמי הוא דגל צרפת, לצד סמלים מקומיים המשקפים את מעמדה הייחודי בדרום אמריקה.",
+    emblem: "הסמלים המקומיים של גיאנה הצרפתית מחברים בין זהות צרפתית, טבע טרופי וחוף הגיאנות.",
+    historicalNote: "גיאנה הצרפתית מחברת בין חוף הגיאנות, אי השדים, פרשת דרייפוס, מרכז החלל קורו והמעבר אל האמזונס."
   }
 ];
