@@ -208,5 +208,26 @@ const countries = [
     vexillology: "דגל טרינידד וטובגו כולל אדום, שחור ולבן, המסמלים חיוניות, חוזק, ים והרמוניה.",
     emblem: "סמל המדינה כולל קוליברים, ספינות וציפורי ים, ומחבר בין טבע, קולומבוס והמרחב הקריבי.",
     historicalNote: "טרינידד וטובגו מחברת בין מסעו השלישי של קולומבוס, ונצואלה, האורינוקו וההבנה שאמריקה היא יבשת."
+  },
+  {
+    id: "guyana",
+    name: "גיאנה",
+    englishName: "Guyana",
+    region: "דרום אמריקה",
+    capital: "ג׳ורג׳טאון",
+    detailPage: "destinations/guyana.html",
+    flag: { url: "https://flagcdn.com/w640/gy.png", alt: "דגל גיאנה", credit: "תמונת דגל דרך FlagCDN / Flagpedia", source: "https://flagpedia.net/guyana" },
+    emblemImage: { url: "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20arms%20of%20Guyana.svg", alt: "סמל גיאנה", credit: "תמונת סמל דרך Wikimedia Commons", source: "https://commons.wikimedia.org/wiki/File:Coat_of_arms_of_Guyana.svg" },
+    explorer: "סר וולטר ראלי",
+    explorerEnglish: "Sir Walter Raleigh",
+    explorerLifeYears: "1552–1618",
+    explorerImage: { url: "https://commons.wikimedia.org/wiki/Special:FilePath/Sir%20Walter%20Raleigh%20by%20%27H%27%20monogrammist.jpg", alt: "סר וולטר ראלי", credit: "דיוקן דרך Wikimedia Commons", source: "https://commons.wikimedia.org/wiki/File:Sir_Walter_Raleigh_by_%27H%27_monogrammist.jpg" },
+    discoveryYear: "המאה ה־16",
+    discoveryCircumstances: "החוף והנהרות של גיאנה נודעו לאירופים בהדרגה; ראלי מזוהה במיוחד עם מסעות החיפוש אחר אל דוראדו באזור.",
+    indigenousPeoples: "באזור חיו עמים ילידיים רבים, ובהם קבוצות אראוואקיות וקאריביות לאורך החופים, הנהרות והיערות.",
+    etymology: "השם Guyana / Guiana נקשר בדרך כלל לשפות ילידיות ומוסבר לעיתים כ'ארץ המים הרבים'.",
+    vexillology: "דגל גיאנה, 'ראש החץ הזהוב', כולל ירוק, זהב, אדום, לבן ושחור המסמלים טבע, עושר, מים, כוח ונחישות.",
+    emblem: "סמל גיאנה כולל יגואר, פרח מים, כלים ילידיים וסמלים של נהרות, טבע ומשאבים.",
+    historicalNote: "גיאנה מחברת בין ונצואלה, טרינידד, האורינוקו ואגדת אל דוראדו, וממשיכה את המסע מזרחה לאורך חוף הגיאנות."
   }
 ];
