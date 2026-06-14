@@ -158,7 +158,7 @@ const countries = [
     explorer: "גונסאלו חימנס דה קסאדה",
     explorerEnglish: "Gonzalo Jiménez de Quesada",
     explorerLifeYears: "1509–1579",
-    explorerImage: { url: "https://commons.wikimedia.org/wiki/Special:FilePath/Gonzalo%20Jim%C3%A9nez%20de%20Quesada.jpg", alt: "דיוקן של גונסאלו חימנס דה קסאדה", credit: "דיוקן דרך Wikimedia Commons", source: "https://commons.wikimedia.org/wiki/File:Gonzalo_Jim%C3%A9nez_de_Quesada.jpg" },
+    explorerImage: { url: "assets/explorers/gonzalo-jimenez-de-quesada-ai-portrait.png", alt: "דיוקן של גונסאלו חימנס דה קסאדה", credit: "דיוקן מקומי בפרויקט", source: "assets/explorers/gonzalo-jimenez-de-quesada-ai-portrait.png" },
     discoveryYear: "ראשית המאה ה־16",
     discoveryCircumstances: "הספרדים התקדמו מן החוף הקריבי אל פנים הארץ, דרך קרטחנה, נהרות ורמות האנדים.",
     indigenousPeoples: "באזור חיו עמים רבים, ובהם המויסקה והעולם התרבותי הצ׳יבצ׳י.",
@@ -166,5 +166,26 @@ const countries = [
     vexillology: "דגל קולומביה כולל צהוב, כחול ואדום, המסמלים עושר, ימים ונהרות, ומאבק לעצמאות.",
     emblem: "סמל קולומביה כולל קונדור, מגן, ספינות ושפע טבעי, ומבטא חירות וריבונות.",
     historicalNote: "קולומביה מסמלת את המעבר מן הקריביים אל יבשת דרום אמריקה ואל אגדת אל דוראדו."
+  },
+  {
+    id: "venezuela",
+    name: "ונצואלה",
+    englishName: "Venezuela",
+    region: "דרום אמריקה",
+    capital: "קראקס",
+    detailPage: "destinations/venezuela.html",
+    flag: { url: "https://flagcdn.com/w640/ve.png", alt: "דגל ונצואלה", credit: "תמונת דגל דרך FlagCDN / Flagpedia", source: "https://flagpedia.net/venezuela" },
+    emblemImage: { url: "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20arms%20of%20Venezuela.svg", alt: "סמל ונצואלה", credit: "תמונת סמל דרך Wikimedia Commons", source: "https://commons.wikimedia.org/wiki/File:Coat_of_arms_of_Venezuela.svg" },
+    explorer: "אלונסו דה אוחדה ואמריגו וספוצ׳י",
+    explorerEnglish: "Alonso de Ojeda and Amerigo Vespucci",
+    explorerLifeYears: "אוחדה בערך 1466–1515; וספוצ׳י 1454–1512",
+    explorerImage: { url: "https://commons.wikimedia.org/wiki/Special:FilePath/Alonso%20de%20Ojeda.jpg", alt: "אלונסו דה אוחדה", credit: "דיוקן דרך Wikimedia Commons", source: "https://commons.wikimedia.org/wiki/File:Alonso_de_Ojeda.jpg" },
+    discoveryYear: "1499",
+    discoveryCircumstances: "אוחדה וספוצ׳י הפליגו לאורך חופי ונצואלה במסגרת מיפוי החוף הצפוני של דרום אמריקה.",
+    indigenousPeoples: "באזור חיו עמים ילידיים רבים לאורך החופים, הלגונות, הנהרות ופנים הארץ.",
+    etymology: "השם ונצואלה מוסבר בדרך כלל כ'ונציה הקטנה', בעקבות יישובים על מים באזור אגם מרקאיבו.",
+    vexillology: "דגל ונצואלה כולל צהוב, כחול ואדום וקשת כוכבים המסמלת מחוזות היסטוריים ואחדות לאומית.",
+    emblem: "סמל ונצואלה כולל סוס לבן, שיבולים, נשק ודגלים, ומבטא חירות, שפע ועצמאות.",
+    historicalNote: "ונצואלה ממשיכה את המסע מזרחה לאורך החוף הקריבי של דרום אמריקה וקושרת את הסיפור לשם אמריקה."
   }
 ];
