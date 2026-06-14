@@ -145,5 +145,26 @@ const countries = [
     vexillology: "דגל פנמה המודרני משלב אדום, כחול ולבן, המסמלים כוחות פוליטיים, שלום ואיזון לאומי.",
     emblem: "סמל פנמה כולל סמלים של עבודה, עצמאות, תעלה, ים והיסטוריה לאומית.",
     historicalNote: "פנמה הייתה צומת בין־אוקייני מרכזי כבר בתקופה הספרדית."
+  },
+  {
+    id: "colombia",
+    name: "קולומביה",
+    englishName: "Colombia",
+    region: "דרום אמריקה",
+    capital: "בוגוטה",
+    detailPage: "destinations/colombia.html",
+    flag: { url: "https://flagcdn.com/w640/co.png", alt: "דגל קולומביה", credit: "תמונת דגל דרך FlagCDN / Flagpedia", source: "https://flagpedia.net/colombia" },
+    emblemImage: { url: "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20arms%20of%20Colombia.svg", alt: "סמל קולומביה", credit: "תמונת סמל דרך Wikimedia Commons", source: "https://commons.wikimedia.org/wiki/File:Coat_of_arms_of_Colombia.svg" },
+    explorer: "גונסאלו חימנס דה קסאדה",
+    explorerEnglish: "Gonzalo Jiménez de Quesada",
+    explorerLifeYears: "1509–1579",
+    explorerImage: { url: "https://commons.wikimedia.org/wiki/Special:FilePath/Gonzalo%20Jim%C3%A9nez%20de%20Quesada.jpg", alt: "דיוקן של גונסאלו חימנס דה קסאדה", credit: "דיוקן דרך Wikimedia Commons", source: "https://commons.wikimedia.org/wiki/File:Gonzalo_Jim%C3%A9nez_de_Quesada.jpg" },
+    discoveryYear: "ראשית המאה ה־16",
+    discoveryCircumstances: "הספרדים התקדמו מן החוף הקריבי אל פנים הארץ, דרך קרטחנה, נהרות ורמות האנדים.",
+    indigenousPeoples: "באזור חיו עמים רבים, ובהם המויסקה והעולם התרבותי הצ׳יבצ׳י.",
+    etymology: "השם Colombia נגזר משמו של קולומבוס; בתקופה הספרדית נקשר האזור לשם גרנדה החדשה.",
+    vexillology: "דגל קולומביה כולל צהוב, כחול ואדום, המסמלים עושר, ימים ונהרות, ומאבק לעצמאות.",
+    emblem: "סמל קולומביה כולל קונדור, מגן, ספינות ושפע טבעי, ומבטא חירות וריבונות.",
+    historicalNote: "קולומביה מסמלת את המעבר מן הקריביים אל יבשת דרום אמריקה ואל אגדת אל דוראדו."
   }
 ];
