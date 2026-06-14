@@ -13,10 +13,10 @@ const countries = [
     explorerLifeYears: "1451–1506",
     explorerImage: { url: "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20a%20Man%2C%20Said%20to%20be%20Christopher%20Columbus.jpg", alt: "דיוקן המיוחס באופן מסורתי לכריסטופר קולומבוס", credit: "דיוקן דרך Wikimedia Commons", source: "https://commons.wikimedia.org/wiki/File:Portrait_of_a_Man,_Said_to_be_Christopher_Columbus.jpg" },
     discoveryYear: "1492",
-    discoveryCircumstances: "קולומבוס הגיע להיספניולה במסעו הראשון, התרשם מגודל האי וממשאביו, ובה הוקמה לה נבידד — ההתיישבות הספרדית הראשונה באמריקה.",
+    discoveryCircumstances: "קולומבוס הגיע להיספניולה במסעו הראשון, ובה הוקמה לה נבידד — ההתיישבות הספרדית הראשונה באמריקה.",
     indigenousPeoples: "לפני הגעת האירופים חיו באי בעיקר קהילות טאינו.",
-    etymology: "השם Hispaniola נובע מן השם הספרדי La Española, כלומר הספרדית או ספרד הקטנה. שמות ילידיים הקשורים לאי כוללים Ayiti ו־Quisqueya.",
-    vexillology: "כיום האי מחולק בין שתי מדינות, האיטי והרפובליקה הדומיניקנית, שלכל אחת דגל וסמל משלה.",
+    etymology: "השם Hispaniola נובע מן השם הספרדי La Española. שמות ילידיים הקשורים לאי כוללים Ayiti ו־Quisqueya.",
+    vexillology: "כיום האי מחולק בין האיטי והרפובליקה הדומיניקנית, שלכל אחת דגל וסמל משלה.",
     emblem: "להיספניולה כאי אין סמל מדינה אחד, מפני שהיא מחולקת כיום בין שתי מדינות ריבוניות.",
     historicalNote: "היספניולה הייתה בסיס מרכזי להתפשטות הספרדית המוקדמת בעולם החדש."
   },
@@ -34,12 +34,12 @@ const countries = [
     explorerLifeYears: "1451–1506",
     explorerImage: { url: "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20a%20Man%2C%20Said%20to%20be%20Christopher%20Columbus.jpg", alt: "דיוקן המיוחס באופן מסורתי לכריסטופר קולומבוס", credit: "דיוקן דרך Wikimedia Commons", source: "https://commons.wikimedia.org/wiki/File:Portrait_of_a_Man,_Said_to_be_Christopher_Columbus.jpg" },
     discoveryYear: "1492",
-    discoveryCircumstances: "קולומבוס הגיע לארכיפלג הלוקאיאני במהלך מסעו הראשון מערבה באוקיינוס האטלנטי, במסגרת חיפוש אחר נתיב ימי לאסיה.",
+    discoveryCircumstances: "קולומבוס הגיע לארכיפלג הלוקאיאני במהלך מסעו הראשון מערבה באוקיינוס האטלנטי.",
     indigenousPeoples: "לפני הגעת האירופים חיו באיים קהילות לוקאיאן־טאינו.",
-    etymology: "השם בהאמה מקושר בדרך כלל לביטוי הספרדי baja mar, שפירושו ים רדוד או שפל, המתייחס למים הרדודים סביב האיים.",
-    vexillology: "בדגל המודרני של איי בהאמה צבע טורקיז המסמל את הים, צהוב המסמל את החול והשמש, ושחור המסמל את כוחו ונחישותו של העם.",
+    etymology: "השם בהאמה מקושר בדרך כלל לביטוי הספרדי baja mar, ים רדוד או שפל.",
+    vexillology: "בדגל המודרני צבע טורקיז לים, צהוב לחול ולשמש, ושחור לכוחו ונחישותו של העם.",
     emblem: "סמל המדינה כולל אונייה, בעלי חיים ימיים וסמלים הקשורים לים ולאיים.",
-    historicalNote: "איי בהאמה מזוהים מאוד עם נקודת הנחיתה הראשונה במסעו של קולומבוס בשנת 1492, אף שזהות האי המדויק עדיין נתונה לוויכוח."
+    historicalNote: "איי בהאמה מזוהים עם נקודת הנחיתה הראשונה במסעו של קולומבוס בשנת 1492."
   },
   {
     id: "puerto-rico",
@@ -55,12 +55,33 @@ const countries = [
     explorerLifeYears: "1451–1506",
     explorerImage: { url: "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20a%20Man%2C%20Said%20to%20be%20Christopher%20Columbus.jpg", alt: "דיוקן המיוחס באופן מסורתי לכריסטופר קולומבוס", credit: "דיוקן דרך Wikimedia Commons", source: "https://commons.wikimedia.org/wiki/File:Portrait_of_a_Man,_Said_to_be_Christopher_Columbus.jpg" },
     discoveryYear: "1493",
-    discoveryCircumstances: "קולומבוס הגיע לפוארטו ריקו במסעו השני, כחלק ממסע ספרדי רחב יותר לביסוס נוכחות באיים הקריביים.",
+    discoveryCircumstances: "קולומבוס הגיע לפוארטו ריקו במסעו השני, כחלק ממסע לביסוס נוכחות ספרדית בקריביים.",
     indigenousPeoples: "לפני הגעת האירופים חיו באי קהילות טאינו, שקראו לו Borikén או Borinquén.",
-    etymology: "Puerto Rico פירושו נמל עשיר; השם הילידי Borikén / Borinquén משמר את הזהות המקומית הקדומה של האי.",
-    vexillology: "דגל פוארטו ריקו כולל פסים אדומים ולבנים, משולש כחול וכוכב לבן, והוא מבטא זהות תרבותית ולאומית מודרנית.",
-    emblem: "סמל פוארטו ריקו כולל סמלים נוצריים וספרדיים, ובהם השה הקשור ליוחנן המטביל ולשם San Juan Bautista.",
-    historicalNote: "פוארטו ריקו הייתה עמדת מפתח ספרדית בכניסה המזרחית לקריביים ובסיס חשוב סביב סן חואן."
+    etymology: "Puerto Rico פירושו נמל עשיר; Borikén / Borinquén משמר את הזהות המקומית הקדומה.",
+    vexillology: "הדגל כולל פסים אדומים ולבנים, משולש כחול וכוכב לבן, ומבטא זהות תרבותית מודרנית.",
+    emblem: "סמל פוארטו ריקו כולל סמלים נוצריים וספרדיים, ובהם השה הקשור ליוחנן המטביל.",
+    historicalNote: "פוארטו ריקו הייתה עמדת מפתח ספרדית בכניסה המזרחית לקריביים."
+  },
+  {
+    id: "jamaica",
+    name: "ג׳מייקה",
+    englishName: "Jamaica",
+    region: "האיים הקריביים",
+    capital: "קינגסטון",
+    detailPage: "destinations/jamaica.html",
+    flag: { url: "https://flagcdn.com/w640/jm.png", alt: "דגל ג׳מייקה", credit: "תמונת דגל דרך FlagCDN / Flagpedia", source: "https://flagpedia.net/jamaica" },
+    emblemImage: { url: "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20arms%20of%20Jamaica.svg", alt: "סמל ג׳מייקה", credit: "תמונת סמל דרך Wikimedia Commons", source: "https://commons.wikimedia.org/wiki/File:Coat_of_arms_of_Jamaica.svg" },
+    explorer: "כריסטופר קולומבוס",
+    explorerEnglish: "Christopher Columbus",
+    explorerLifeYears: "1451–1506",
+    explorerImage: { url: "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20a%20Man%2C%20Said%20to%20be%20Christopher%20Columbus.jpg", alt: "דיוקן המיוחס באופן מסורתי לכריסטופר קולומבוס", credit: "דיוקן דרך Wikimedia Commons", source: "https://commons.wikimedia.org/wiki/File:Portrait_of_a_Man,_Said_to_be_Christopher_Columbus.jpg" },
+    discoveryYear: "1494",
+    discoveryCircumstances: "קולומבוס הגיע לג׳מייקה במסעו השני, ובהמשך נתקע באי בשנים 1503–1504 במסעו הרביעי.",
+    indigenousPeoples: "לפני הגעת האירופים חיו באי קהילות טאינו, שקראו לו Xaymaca.",
+    etymology: "השם Jamaica התפתח מן השם הילידי Xaymaca, המזוהה במסורת עם ארץ העץ והמים.",
+    vexillology: "דגל ג׳מייקה כולל ירוק, שחור וזהב, המסמלים צמחייה, קשיים וחוזק, שמש ועושר טבעי.",
+    emblem: "סמל ג׳מייקה כולל דמויות ילידיות, מגן ותנין, ומשלב זיכרון מקומי עם מסורת הרלדית אירופית.",
+    historicalNote: "ג׳מייקה נכנסה תחילה למערכת הספרדית, אך בשנת 1655 עברה לשלטון אנגלי."
   },
   {
     id: "cuba",
@@ -79,7 +100,7 @@ const countries = [
     discoveryCircumstances: "קולומבוס הגיע לקובה במהלך מסעו הראשון, ובתחילה סבר כי ייתכן שמדובר בחלק מאסיה.",
     indigenousPeoples: "לפני הקולוניזציה הספרדית חיו בקובה קהילות טאינו, סיבוני וגואנאהטביי.",
     etymology: "השם קובה נובע ככל הנראה ממילה ילידית בשפת הטאינו, אך משמעותה המדויקת נתונה לוויכוח.",
-    vexillology: "הדגל המודרני של קובה כולל פסים כחולים ולבנים, משולש אדום וכוכב לבן, המסמלים עצמאות, חירות ומאבק לאומי.",
+    vexillology: "הדגל המודרני של קובה כולל פסים כחולים ולבנים, משולש אדום וכוכב לבן.",
     emblem: "סמל קובה כולל מפתח, שמש עולה, הרים וסמלים לאומיים הקשורים לחירות ולגאוגרפיה של האי.",
     historicalNote: "קובה הפכה לאחת הטריטוריות הקולוניאליות המרכזיות של ספרד באיים הקריביים."
   },
@@ -100,9 +121,9 @@ const countries = [
     discoveryCircumstances: "קורטס הוביל משלחת ספרדית אל חופי מקסיקו, שהפכה בהמשך למסע הכיבוש של האימפריה האצטקית.",
     indigenousPeoples: "באזור חיו תרבויות ילידיות רבות, ובהן המֶשיקה/האצטקים, המאיה, הזפוטקים, המיקסטקים ואחרים.",
     etymology: "השם מקסיקו נובע מן השם בנאוואטל Mēxihco, הקשור לעם המֶשיקה ולעמק מקסיקו.",
-    vexillology: "הדגל המודרני של מקסיקו כולל שלושה פסים אנכיים בצבעי ירוק, לבן ואדום, ובמרכזו סמל המדינה עם העיט, הנחש והצבר.",
+    vexillology: "הדגל המודרני של מקסיקו כולל שלושה פסים אנכיים בצבעי ירוק, לבן ואדום.",
     emblem: "סמל המדינה מבוסס על אגדת ייסוד טנוצ'טיטלאן, שבה נראה עיט עומד על צבר ואוחז בנחש.",
-    historicalNote: "המפגש הספרדי עם מקסיקו הוביל לאחת התמורות המשמעותיות בהיסטוריה העולמית: נפילת האימפריה האצטקית והקמת ספרד החדשה."
+    historicalNote: "המפגש הספרדי עם מקסיקו הוביל לנפילת האימפריה האצטקית ולהקמת ספרד החדשה."
   },
   {
     id: "panama",
@@ -120,9 +141,9 @@ const countries = [
     discoveryYear: "1513",
     discoveryCircumstances: "בלבואה חצה את מצר פנמה וראה את הים הדרומי, האוקיינוס השקט, מנקודת המבט האירופית.",
     indigenousPeoples: "באזור חיו עמים וקבוצות ילידיות מגוונות, בעלות ידע מקומי חיוני על דרכים, נהרות ונתיבי מסחר.",
-    etymology: "השם פנמה נחשב שם ילידי, אך משמעותו המדויקת אינה ודאית; מסורות קושרות אותו לשפע דגים, פרפרים או יישוב מקומי.",
+    etymology: "השם פנמה נחשב שם ילידי, אך משמעותו המדויקת אינה ודאית.",
     vexillology: "דגל פנמה המודרני משלב אדום, כחול ולבן, המסמלים כוחות פוליטיים, שלום ואיזון לאומי.",
     emblem: "סמל פנמה כולל סמלים של עבודה, עצמאות, תעלה, ים והיסטוריה לאומית.",
-    historicalNote: "פנמה הייתה צומת בין־אוקייני מרכזי כבר בתקופה הספרדית, הרבה לפני תעלת פנמה המודרנית."
+    historicalNote: "פנמה הייתה צומת בין־אוקייני מרכזי כבר בתקופה הספרדית."
   }
 ];
