@@ -280,7 +280,7 @@ const countries = [
     capital: "שער האמזונס בצפון ברזיל",
     detailPage: "destinations/amazon-estuary.html",
     flag: { url: "https://commons.wikimedia.org/wiki/Special:FilePath/Amazonriverbasin%20basemap.png", alt: "מפת אגן האמזונס", credit: "מפה דרך Wikimedia Commons", source: "https://commons.wikimedia.org/wiki/File:Amazonriverbasin_basemap.png" },
-    emblemImage: { url: "https://commons.wikimedia.org/wiki/Special:FilePath/Amazon%20River%20mouth%20and%20Marajo%20Island%2C%20Brazil.jpg", alt: "שפך האמזונס והאי מרז׳ו", credit: "תמונה דרך Wikimedia Commons", source: "https://commons.wikimedia.org/wiki/File:Amazon_River_mouth_and_Marajo_Island,_Brazil.jpg" },
+    emblemImage: { url: "../../assets/images/destinations/amazon-estuary-marajo-island.jpg", alt: "שפך האמזונס והאי מרז׳ו", credit: "תמונה מקומית בפרויקט", source: "assets/images/destinations/amazon-estuary-marajo-island.jpg" },
     explorer: "ויסנטה יאנייס פינסון ופרנסיסקו דה אוריאנה",
     explorerEnglish: "Vicente Yáñez Pinzón and Francisco de Orellana",
     explorerLifeYears: "פינסון בערך 1462–1514; אוריאנה בערך 1511–1546",
@@ -292,5 +292,26 @@ const countries = [
     vexillology: "שפך האמזונס אינו מדינה ולכן אין לו דגל; בפרויקט הוא מיוצג באמצעות מפות ותמונות של הנהר והאי מרז׳ו.",
     emblem: "השפך מסמל את המעבר מן האוקיינוס האטלנטי אל פנים דרום אמריקה ואל עולם הנהרות והיערות.",
     historicalNote: "שפך האמזונס הוא שער הכניסה הגדול אל נהר האמזונס, יער האמזונס והפרק המרכזי הבא במסע שלנו."
+  },
+  {
+    id: "amazon-river",
+    name: "נהר האמזונס",
+    englishName: "Amazon River",
+    region: "דרום אמריקה",
+    capital: "מערכת נהרות באגן האמזונס",
+    detailPage: "destinations/amazon-river.html",
+    flag: { url: "https://commons.wikimedia.org/wiki/Special:FilePath/Amazonriverbasin%20basemap.png", alt: "מפת אגן נהר האמזונס", credit: "מפה דרך Wikimedia Commons", source: "https://commons.wikimedia.org/wiki/File:Amazonriverbasin_basemap.png" },
+    emblemImage: { url: "https://commons.wikimedia.org/wiki/Special:FilePath/Amazon%20River%20from%20ISS.jpg", alt: "נהר האמזונס מן החלל", credit: "תמונה דרך Wikimedia Commons", source: "https://commons.wikimedia.org/wiki/File:Amazon_River_from_ISS.jpg" },
+    explorer: "פרנסיסקו דה אוריאנה",
+    explorerEnglish: "Francisco de Orellana",
+    explorerLifeYears: "בערך 1511–1546",
+    explorerImage: { url: "https://commons.wikimedia.org/wiki/Special:FilePath/Amazonriverbasin%20basemap.png", alt: "מפת אגן האמזונס", credit: "מפה דרך Wikimedia Commons", source: "https://commons.wikimedia.org/wiki/File:Amazonriverbasin_basemap.png" },
+    discoveryYear: "1541–1542",
+    discoveryCircumstances: "אוריאנה הוביל את המסע האירופי הידוע לאורך הנהר, לאחר שפינסון כבר זוהה עם הגעה אירופית מוקדמת לשפך.",
+    indigenousPeoples: "לאורך הנהר חיו וחיים עמים ילידיים רבים, ובהם יאנומאמי, טיקונה, אשנינקה וקבוצות נוספות.",
+    etymology: "השם אמזונס נקשר למסעו של אוריאנה ולדימוי האמזונות מן המיתולוגיה היוונית, לצד שמות מקומיים רבים לנהר וליובליו.",
+    vexillology: "נהר האמזונס אינו מדינה ולכן אין לו דגל; בפרויקט הוא מיוצג באמצעות מפות, הנהר, יובליו והיער שמסביבו.",
+    emblem: "הנהר מסמל את המעבר מן החוף אל לב דרום אמריקה ואת מערכת המים הגדולה ביותר במסע שלנו.",
+    historicalNote: "נהר האמזונס הוא אחד מדפי הדגל של הפרויקט ומכין את המעבר אל יער האמזונס."
   }
 ];
