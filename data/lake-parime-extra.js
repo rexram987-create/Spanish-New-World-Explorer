@@ -1,0 +1,21 @@
+countries.push({
+  id: "lake-parime",
+  name: "אגם פרימה",
+  englishName: "Lake Parime",
+  region: "דרום אמריקה",
+  capital: "אגם אגדי בגיאנה הפנימית",
+  detailPage: "destinations/lake-parime.html",
+  flag: { url: "https://commons.wikimedia.org/wiki/Special:FilePath/1599%20Wright-Molyneux%20Map%20of%20the%20World%20-%20Geographicus%20-%20World-molyneux-1599.jpg", alt: "מפה היסטורית של העולם החדש", credit: "מפה דרך Wikimedia Commons", source: "https://commons.wikimedia.org/wiki/File:1599_Wright-Molyneux_Map_of_the_World_-_Geographicus_-_World-molyneux-1599.jpg" },
+  emblemImage: { url: "https://commons.wikimedia.org/wiki/Special:FilePath/Hoatzin%20%28Opisthocomus%20hoazin%29.JPG", alt: "הואצין", credit: "תמונה דרך Wikimedia Commons", source: "https://commons.wikimedia.org/wiki/File:Hoatzin_(Opisthocomus_hoazin).JPG" },
+  explorer: "סר וולטר ראלי, לורנס קמיס ואחרים",
+  explorerEnglish: "Sir Walter Raleigh, Lawrence Kemys and others",
+  explorerLifeYears: "ראלי 1552–1618; קמיס בערך 1565–1618",
+  explorerImage: { url: "https://commons.wikimedia.org/wiki/Special:FilePath/1599%20Wright-Molyneux%20Map%20of%20the%20World%20-%20Geographicus%20-%20World-molyneux-1599.jpg", alt: "מפה היסטורית של העולם החדש", credit: "מפה דרך Wikimedia Commons", source: "https://commons.wikimedia.org/wiki/File:1599_Wright-Molyneux_Map_of_the_World_-_Geographicus_-_World-molyneux-1599.jpg" },
+  discoveryYear: "המאה ה־16–17",
+  discoveryCircumstances: "אגם פרימה הופיע במפות אירופיות בעקבות דיווחים על גיאנה, מנואה, אל דוראדו, נהרות והצפות עונתיות.",
+  indigenousPeoples: "האגדה קשורה למרחב גיאנה הפנימית, אזורי רופונוני, האורינוקו ועמים ילידיים שמסרו מידע גאוגרפי שהאירופים פירשו לעיתים באופן שגוי.",
+  etymology: "Parime היה שם שהופיע במקורות אירופיים ביחס לאזורי מים וגיאנה הפנימית, והפך לשם של אגם אגדי במפות.",
+  vexillology: "אגם פרימה אינו מדינה ולכן אין לו דגל; בפרויקט הוא מיוצג באמצעות מפות היסטוריות ותמונות טבע של אזור גיאנה.",
+  emblem: "אגם פרימה מסמל את המעבר מן האגדה של אל דוראדו אל הקרטוגרפיה — מקום שנראה אמיתי מפני שהופיע במפות.",
+  historicalNote: "אגם פרימה מסיים את מחזור אל דוראדו ומכין את המעבר לסימולטור הספינה האינטראקטיבי."
+});
