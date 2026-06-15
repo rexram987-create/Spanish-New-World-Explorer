@@ -1,0 +1,21 @@
+countries.push({
+  id: "amazon-rainforest",
+  name: "יער האמזונס",
+  englishName: "Amazon Rainforest",
+  region: "דרום אמריקה",
+  capital: "אגן האמזונס",
+  detailPage: "destinations/amazon-rainforest.html",
+  flag: { url: "https://commons.wikimedia.org/wiki/Special:FilePath/Amazonia.jpg", alt: "יער האמזונס", credit: "תמונה דרך Wikimedia Commons", source: "https://commons.wikimedia.org/wiki/File:Amazonia.jpg" },
+  emblemImage: { url: "https://commons.wikimedia.org/wiki/Special:FilePath/Amazon_rainforest.jpg", alt: "יער גשם באמזונס", credit: "תמונה דרך Wikimedia Commons", source: "https://commons.wikimedia.org/wiki/File:Amazon_rainforest.jpg" },
+  explorer: "מסעות אירופיים לאורך האמזונס ופנים היבשת",
+  explorerEnglish: "European voyages along the Amazon and the interior",
+  explorerLifeYears: "המאה ה־16 ואילך",
+  explorerImage: { url: "https://commons.wikimedia.org/wiki/Special:FilePath/Amazonriverbasin%20basemap.png", alt: "מפת אגן האמזונס", credit: "מפה דרך Wikimedia Commons", source: "https://commons.wikimedia.org/wiki/File:Amazonriverbasin_basemap.png" },
+  discoveryYear: "1541–1542 ואילך",
+  discoveryCircumstances: "היער נודע לאירופים בהדרגה דרך מסעות נהר, ובעיקר דרך מסעו של אוריאנה לאורך האמזונס.",
+  indigenousPeoples: "לפני הגעת האירופים חיו וחיים ביער עמים ילידיים רבים, ובהם יאנומאמי, קיאפו, טיקונה, אשנינקה וקבוצות נוספות.",
+  etymology: "השם יער האמזונס נגזר מנהר האמזונס, ששמו האירופי נקשר למסעו של אוריאנה ולדימוי האמזונות מן המיתולוגיה היוונית.",
+  vexillology: "יער האמזונס אינו מדינה ולכן אין לו דגל; בפרויקט הוא מיוצג באמצעות תמונות יער, מפות ושכבות יער הגשם.",
+  emblem: "היער מסמל את העולם הירוק המקיף את נהר האמזונס ואת המרחב הביולוגי והתרבותי העצום של פנים דרום אמריקה.",
+  historicalNote: "יער האמזונס הוא המשך טבעי לדפי שפך האמזונס ונהר האמזונס, ומוביל אל אל דוראדו, מנאוס ופנים היבשת."
+});
