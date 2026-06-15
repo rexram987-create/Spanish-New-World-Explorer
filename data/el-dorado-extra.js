@@ -1,0 +1,21 @@
+countries.push({
+  id: "el-dorado",
+  name: "אל דוראדו",
+  englishName: "El Dorado",
+  region: "דרום אמריקה",
+  capital: "אגדת זהב היסטורית",
+  detailPage: "destinations/el-dorado.html",
+  flag: { url: "https://commons.wikimedia.org/wiki/Special:FilePath/Lake%20Guatavita.jpg", alt: "אגם גואטביטה", credit: "תמונה דרך Wikimedia Commons", source: "https://commons.wikimedia.org/wiki/File:Lake_Guatavita.jpg" },
+  emblemImage: { url: "https://commons.wikimedia.org/wiki/Special:FilePath/Muisca%20raft%20Legend%20of%20El%20Dorado%20Offerings%20of%20gold.jpg", alt: "רפסודת המויסקה וטקס אל דוראדו", credit: "תמונה דרך Wikimedia Commons", source: "https://commons.wikimedia.org/wiki/File:Muisca_raft_Legend_of_El_Dorado_Offerings_of_gold.jpg" },
+  explorer: "גונסאלו חימנס דה קסאדה, אוריאנה, ראלי ואחרים",
+  explorerEnglish: "Gonzalo Jiménez de Quesada, Orellana, Raleigh and others",
+  explorerLifeYears: "המאה ה־16 ואילך",
+  explorerImage: { url: "https://commons.wikimedia.org/wiki/Special:FilePath/Lake%20Guatavita.jpg", alt: "אגם גואטביטה", credit: "תמונה דרך Wikimedia Commons", source: "https://commons.wikimedia.org/wiki/File:Lake_Guatavita.jpg" },
+  discoveryYear: "המאה ה־16",
+  discoveryCircumstances: "אגדת אל דוראדו נולדה ממפגש בין טקסי זהב אמיתיים של בני המויסקה לבין דמיון אירופי על עיר או ממלכת זהב.",
+  indigenousPeoples: "הגרעין הקדום של האגדה קשור לבני המויסקה ברמות קולומביה, ובהמשך נדד בדמיון האירופי אל גיאנה, האורינוקו והאמזונס.",
+  etymology: "El Dorado פירושו בספרדית 'המוזהב' או 'האיש המוזהב', ומקורו אינו בעיר אלא בדמות טקסית מכוסה בזהב.",
+  vexillology: "אל דוראדו אינה מדינה ולכן אין לה דגל; בפרויקט היא מיוצגת באמצעות אגם גואטביטה, רפסודת המויסקה ומפות אגדה.",
+  emblem: "אל דוראדו מסמלת את המעבר ממסעות גאוגרפיים למסעות בעקבות מיתוס, מפות ושמועות על עושר נסתר.",
+  historicalNote: "הדף מחבר בין קולומביה, ונצואלה, גיאנה, האורינוקו, האמזונס ויער האמזונס."
+});
