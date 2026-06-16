@@ -7,7 +7,7 @@ const voyageRoute = [
     explorerLife: "1451–1506",
     summary: "התחנה הראשונה במסעו של קולומבוס בעולם החדש. לפי המסורת, הוא הגיע לאי גואנאהאני, שקיבל את השם סן סלבדור.",
     detailPage: "destinations/bahamas.html",
-    image: "../assets/images/destinations/bahamas-flag.png",
+    image: "https://flagcdn.com/w640/bs.png",
     x: 16,
     y: 34
   },
@@ -19,7 +19,7 @@ const voyageRoute = [
     explorerLife: "1451–1506",
     summary: "קולומבוס הגיע לקובה במסעו הראשון וחשב בתחילה שמדובר בחלק מאסיה או מקרבה ליבשת גדולה.",
     detailPage: "destinations/cuba.html",
-    image: "../assets/images/destinations/cuba-flag.png",
+    image: "https://flagcdn.com/w640/cu.png",
     x: 25,
     y: 42
   },
@@ -31,7 +31,7 @@ const voyageRoute = [
     explorerLife: "1451–1506",
     summary: "היספניולה הפכה לאחת התחנות החשובות ביותר בראשית ההתיישבות הספרדית בעולם החדש.",
     detailPage: "destinations/hispaniola.html",
-    image: "../assets/images/destinations/hispaniola-map.jpg",
+    image: "https://flagcdn.com/w640/do.png",
     x: 33,
     y: 45
   },
@@ -43,7 +43,7 @@ const voyageRoute = [
     explorerLife: "1451–1506",
     summary: "קולומבוס הגיע לאי במסעו השני, והוא הפך בהמשך לנקודת מפתח במסלול הספרדי בקריביים.",
     detailPage: "destinations/puerto-rico.html",
-    image: "../assets/images/destinations/puerto-rico-flag.png",
+    image: "https://flagcdn.com/w640/pr.png",
     x: 42,
     y: 47
   },
@@ -55,7 +55,7 @@ const voyageRoute = [
     explorerLife: "1451–1506",
     summary: "קולומבוס הגיע לג׳מייקה במסעו השני, כחלק מהרחבת ההיכרות הספרדית עם האיים הקריביים.",
     detailPage: "destinations/jamaica.html",
-    image: "../assets/images/destinations/jamaica-flag.png",
+    image: "https://flagcdn.com/w640/jm.png",
     x: 30,
     y: 55
   },
@@ -67,7 +67,7 @@ const voyageRoute = [
     explorerLife: "1451–1506",
     summary: "במסעו השלישי הגיע קולומבוס לטרינידד ולחופי דרום אמריקה, רגע חשוב במעבר מן האיים אל היבשת.",
     detailPage: "destinations/trinidad-and-tobago.html",
-    image: "../assets/images/destinations/trinidad-and-tobago-flag.png",
+    image: "https://flagcdn.com/w640/tt.png",
     x: 52,
     y: 62
   },
@@ -79,7 +79,7 @@ const voyageRoute = [
     explorerLife: "קולומבוס 1451–1506; וספוצ׳י 1454–1512",
     summary: "חופי ונצואלה היו מן המקומות הראשונים שבהם האירופים הבינו שהם עומדים מול יבשת רחבה ולא רק מול איים.",
     detailPage: "destinations/venezuela.html",
-    image: "../assets/images/destinations/venezuela-flag.png",
+    image: "https://flagcdn.com/w640/ve.png",
     x: 57,
     y: 67
   },
@@ -91,7 +91,7 @@ const voyageRoute = [
     explorerLife: "בערך 1462–אחרי 1514",
     summary: "פינסון מזוהה עם מפגש אירופי מוקדם עם אזור שפך האמזונס וזרימת המים האדירה אל האוקיינוס האטלנטי.",
     detailPage: "destinations/amazon-estuary.html",
-    image: "../assets/images/destinations/amazon-estuary-map.jpg",
+    image: "../assets/images/destinations/amazon-estuary-marajo-island.jpg",
     x: 68,
     y: 75
   },
@@ -103,7 +103,7 @@ const voyageRoute = [
     explorerLife: "בערך 1475–1519",
     summary: "בלבואה חצה את האיסתמוס של פנמה והגיע לאוקיינוס השקט, רגע מרכזי בהבנת מבנה העולם החדש.",
     detailPage: "destinations/panama.html",
-    image: "../assets/images/destinations/panama-flag.png",
+    image: "https://flagcdn.com/w640/pa.png",
     x: 45,
     y: 72
   },
@@ -115,7 +115,7 @@ const voyageRoute = [
     explorerLife: "1485–1547",
     summary: "מסעו של קורטס אל מקסיקו הוביל למפגש דרמטי עם האימפריה האצטקית ולשינוי עמוק בהיסטוריה של אמריקה.",
     detailPage: "destinations/mexico.html",
-    image: "../assets/images/destinations/mexico-flag.png",
+    image: "https://flagcdn.com/w640/mx.png",
     x: 22,
     y: 68
   },
@@ -139,7 +139,7 @@ const voyageRoute = [
     explorerLife: "התקופה הקולוניאלית המוקדמת",
     summary: "גיאנה הפכה למרחב של מיפוי, מסחר, תחרות קולוניאלית ואגדות על פנים היבשת.",
     detailPage: "destinations/guyana.html",
-    image: "../assets/images/destinations/guyana-flag.png",
+    image: "https://flagcdn.com/w640/gy.png",
     x: 65,
     y: 59
   },
