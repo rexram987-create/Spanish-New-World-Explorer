@@ -5,6 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>מגלים | מגלה העולם החדש הספרדי</title>
   <link rel="stylesheet" href="../style.css" />
+  <style>
+    .explorer-index-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;margin-top:24px}
+    .explorer-index-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);border-radius:24px;overflow:hidden;box-shadow:0 16px 42px rgba(0,0,0,.18)}
+    .explorer-index-card img{width:100%;height:300px;object-fit:cover;display:block;background:#071d33}
+    .explorer-index-card .card-body{padding:18px}
+    .explorer-index-card h3{font-size:26px;margin:0 0 8px;color:#f7c948}
+    .explorer-index-card p{font-size:18px;line-height:1.75;margin:8px 0}
+    .explorer-years{color:#dcecff;font-weight:700}
+    @media(max-width:720px){.explorer-index-card img{height:260px}.explorer-index-card h3{font-size:24px}.explorer-index-card p{font-size:17px}}
+  </style>
 </head>
 <body>
   <header class="page-header">
@@ -17,13 +27,14 @@
         <a href="explorers.html">מגלים</a>
         <a href="explorers-gallery.html">גלריית מגלים</a>
         <a href="maps.html">מפות</a>
+        <a href="explorer-simulator.html">🚢 סימולטור המסע</a>
         <a href="sources.html">מקורות</a>
       </div>
     </nav>
     <section class="page-title-block">
       <p class="eyebrow">ביוגרפיות היסטוריות</p>
       <h1>מגלים</h1>
-      <p>דף זה מיועד לביוגרפיות מלאות של המגלים: ילדות, תחילת הדרך, מסעות, שנים מאוחרות ומורשת.</p>
+      <p>דף זה מציג את דפי הביוגרפיה הקיימים באתר, יחד עם דיוקנאות של המגלים המרכזיים.</p>
     </section>
   </header>
 
@@ -31,51 +42,68 @@
     <section class="section">
       <h2>אינדקס ביוגרפיות</h2>
       <p>
-        כאן נבנה בהדרגה דפי ביוגרפיה מפורטים עבור כל מגלה. כל כרטיס יוביל לדף עצמאי משלו.
+        כאן מופיעים רק מגלים שכבר יש להם דף ביוגרפיה מלא באתר. כל כרטיס כולל דיוקן, תקציר קצר וקישור לדף המלא.
       </p>
-      <div class="detail-grid">
-        <div class="detail-box">
-          <strong>כריסטופר קולומבוס</strong>
-          ילדות בגנואה, תחילת דרך ימית, פורטוגל, ארבעת המסעות, אטימולוגיה ומורשת.
-          <div class="home-actions">
-            <a class="primary-link" href="explorers/columbus.html">פתח ביוגרפיה מלאה</a>
+      <div class="explorer-index-grid">
+        <article class="explorer-index-card">
+          <img class="zoomable-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20a%20Man%2C%20Said%20to%20be%20Christopher%20Columbus.jpg" alt="דיוקן המיוחס לכריסטופר קולומבוס" data-caption="דיוקן המיוחס לכריסטופר קולומבוס" />
+          <div class="card-body">
+            <h3>כריסטופר קולומבוס</h3>
+            <p class="explorer-years">1451–1506</p>
+            <p>ילדות בגנואה, תחילת דרך ימית, פורטוגל, ארבעת המסעות, אטימולוגיה ומורשת.</p>
+            <div class="home-actions"><a class="primary-link" href="explorers/columbus.html">פתח ביוגרפיה מלאה</a></div>
           </div>
-        </div>
-        <div class="detail-box">
-          <strong>הרנאן קורטס</strong>
-          ילדות באקסטרמדורה, היספניולה, קובה, מסע מקסיקו, טנוצ'טיטלאן, גילויים עיקריים ומורשת.
-          <div class="home-actions">
-            <a class="primary-link" href="explorers/cortes.html">פתח ביוגרפיה מלאה</a>
+        </article>
+
+        <article class="explorer-index-card">
+          <img class="zoomable-image" src="../assets/explorers/hernan-cortes-portrait.jpg" alt="דיוקן של הרנאן קורטס" data-caption="דיוקן של הרנאן קורטס" />
+          <div class="card-body">
+            <h3>הרנאן קורטס</h3>
+            <p class="explorer-years">1485–1547</p>
+            <p>ילדות באקסטרמדורה, היספניולה, קובה, מסע מקסיקו, טנוצ'טיטלאן ומורשת.</p>
+            <div class="home-actions"><a class="primary-link" href="explorers/cortes.html">פתח ביוגרפיה מלאה</a></div>
           </div>
-        </div>
-        <div class="detail-box">
-          <strong>פרנסיסקו פיסארו</strong>
-          ילדות צנועה, תחילת הדרך באמריקה, פרו, אימפריית האינקה, קחמרקה, לימה ומורשת.
-          <div class="home-actions">
-            <a class="primary-link" href="explorers/pizarro.html">פתח ביוגרפיה מלאה</a>
+        </article>
+
+        <article class="explorer-index-card">
+          <img class="zoomable-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Appletons%27%20Pizarro%20Francisco.jpg" alt="דיוקן של פרנסיסקו פיסארו" data-caption="דיוקן של פרנסיסקו פיסארו" />
+          <div class="card-body">
+            <h3>פרנסיסקו פיסארו</h3>
+            <p class="explorer-years">בערך 1478–1541</p>
+            <p>ילדות צנועה, תחילת הדרך באמריקה, פרו, אימפריית האינקה, קחמרקה, לימה ומורשת.</p>
+            <div class="home-actions"><a class="primary-link" href="explorers/pizarro.html">פתח ביוגרפיה מלאה</a></div>
           </div>
-        </div>
-        <div class="detail-box">
-          <strong>ואסקו נונייס דה בלבואה</strong>
-          דריין, חציית מצר פנמה, גילוי הים הדרומי מנקודת המבט האירופית ומורשת.
-          <div class="home-actions">
-            <a class="primary-link" href="explorers/balboa.html">פתח ביוגרפיה מלאה</a>
+        </article>
+
+        <article class="explorer-index-card">
+          <img class="zoomable-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Vasco%20Nunez%20de%20Balboa.png" alt="דיוקן של ואסקו נונייס דה בלבואה" data-caption="דיוקן של ואסקו נונייס דה בלבואה" />
+          <div class="card-body">
+            <h3>ואסקו נונייס דה בלבואה</h3>
+            <p class="explorer-years">בערך 1475–1519</p>
+            <p>דריין, חציית מצר פנמה, גילוי הים הדרומי מנקודת המבט האירופית ומורשת.</p>
+            <div class="home-actions"><a class="primary-link" href="explorers/balboa.html">פתח ביוגרפיה מלאה</a></div>
           </div>
-        </div>
-        <div class="detail-box">
-          <strong>חואן פונסה דה לאון</strong>
-          פוארטו ריקו, פלורידה, זרמי הים, אגדת מעיין הנעורים ומורשת קולוניאלית.
-          <div class="home-actions">
-            <a class="primary-link" href="explorers/ponce-de-leon.html">פתח ביוגרפיה מלאה</a>
+        </article>
+
+        <article class="explorer-index-card">
+          <img class="zoomable-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Juan%20Ponce%20de%20Leon.png" alt="דיוקן של חואן פונסה דה לאון" data-caption="דיוקן של חואן פונסה דה לאון" />
+          <div class="card-body">
+            <h3>חואן פונסה דה לאון</h3>
+            <p class="explorer-years">בערך 1474–1521</p>
+            <p>פוארטו ריקו, פלורידה, זרמי הים, אגדת מעיין הנעורים ומורשת קולוניאלית.</p>
+            <div class="home-actions"><a class="primary-link" href="explorers/ponce-de-leon.html">פתח ביוגרפיה מלאה</a></div>
           </div>
-        </div>
-        <div class="detail-box">
-          <strong>פרדיננד מגלן</strong>
-          מצר מגלן, האוקיינוס השקט, הפיליפינים ומסע ההקפה הראשון של העולם.
-          <div class="home-actions">
-            <a class="primary-link" href="explorers/magellan.html">פתח ביוגרפיה מלאה</a>
+        </article>
+
+        <article class="explorer-index-card">
+          <img class="zoomable-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Ferdinand%20Magellan%20%28Retouched%29.jpg" alt="דיוקן של פרדיננד מגלן" data-caption="דיוקן של פרדיננד מגלן" />
+          <div class="card-body">
+            <h3>פרדיננד מגלן</h3>
+            <p class="explorer-years">בערך 1480–1521</p>
+            <p>מצר מגלן, האוקיינוס השקט, הפיליפינים ומסע ההקפה הראשון של העולם.</p>
+            <div class="home-actions"><a class="primary-link" href="explorers/magellan.html">פתח ביוגרפיה מלאה</a></div>
           </div>
-        </div>
+        </article>
       </div>
       <div class="home-actions">
         <a class="secondary-link" href="explorers-gallery.html">פתח את גלריית המגלים</a>
@@ -84,8 +112,17 @@
     </section>
   </main>
 
+  <div id="imageLightbox" class="image-lightbox hidden">
+    <div class="image-lightbox-card">
+      <button id="closeLightbox" class="close-button">×</button>
+      <img id="lightboxImage" src="" alt="" />
+      <p id="lightboxCaption"></p>
+    </div>
+  </div>
+
   <footer>
     <p>מגלה העולם החדש הספרדי — פרויקט חינוכי חינמי.</p>
   </footer>
+  <script src="../script.js"></script>
 </body>
 </html>
