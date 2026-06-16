@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <title>סימולטור הספינה | מגלה העולם החדש הספרדי</title>
+  <link rel="stylesheet" href="../style.css?v=4" />
+  <style>
+    :root{--gold:#f7c948;--deep:#071d33;--sea1:#0b4f79;--sea2:#0c6a92;--foam:rgba(255,255,255,.55)}
+    html,body{margin:0;min-height:100%;overflow-x:hidden;background:#071d33;color:#fff;font-family:Arial,"Noto Sans Hebrew",sans-serif}
+    .sim-header{position:relative;z-index:20;padding:18px 18px 10px;background:linear-gradient(180deg,rgba(3,15,29,.96),rgba(3,15,29,.72));border-bottom:1px solid rgba(255,255,255,.15)}
+    .sim-nav{display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap;max-width:1180px;margin:0 auto}.sim-logo{font-weight:900;color:var(--gold);font-size:20px}.sim-links{display:flex;gap:10px;flex-wrap:wrap}.sim-links a{color:#fff;text-decoration:none;padding:8px 10px;border-radius:999px;background:rgba(255,255,255,.09);font-size:15px}.hero-title{max-width:1180px;margin:18px auto 8px;text-align:center}.hero-title .eyebrow{color:var(--gold);font-size:18px;margin:0 0 6px}.hero-title h1{font-size:clamp(38px,8vw,78px);margin:0;line-height:1.05}.hero-title p{font-size:20px;line-height:1.7;margin:12px auto;max-width:850px;color:#dcecff}
+    .sim-shell{position:relative;min-height:74vh;padding:18px;overflow:hidden;background:linear-gradient(180deg,#0e7ba6 0%,#0b5e86 36%,#073c61 100%)}
+    .sky{position:absolute;inset:0 0 58% 0;background:linear-gradient(180deg,#7fd1ff 0%,#bdeaff 55%,rgba(255,255,255,0) 100%);opacity:.9}.sun{position:absolute;width:92px;height:92px;border-radius:50%;background:radial-gradient(circle,#fff6b5,#ffd36b 62%,rgba(255,211,107,0));top:36px;left:9%;box-shadow:0 0 60px #ffe08a}.cloud{position:absolute;width:180px;height:55px;background:rgba(255,255,255,.78);border-radius:999px;filter:blur(.2px);animation:cloudMove 48s linear infinite}.cloud:before,.cloud:after{content:"";position:absolute;background:rgba(255,255,255,.82);border-radius:50%}.cloud:before{width:78px;height:78px;top:-35px;right:34px}.cloud:after{width:62px;height:62px;top:-24px;left:42px}.cloud.c1{top:70px;right:8%;animation-duration:56s}.cloud.c2{top:130px;right:52%;transform:scale(.75);animation-duration:72s}.cloud.c3{top:95px;right:78%;transform:scale(.55);animation-duration:64s}@keyframes cloudMove{from{translate:20vw 0}to{translate:-120vw 0}}
+    .wave{position:absolute;left:-10%;width:120%;height:150px;background:radial-gradient(ellipse at 50% 0%,rgba(255,255,255,.35) 0 14%,transparent 16%),linear-gradient(180deg,rgba(255,255,255,.08),transparent);background-size:120px 45px,100% 100%;opacity:.55;animation:waves 9s linear infinite}.wave.w1{bottom:0}.wave.w2{bottom:80px;opacity:.34;animation-duration:14s;animation-direction:reverse}.wave.w3{bottom:170px;opacity:.24;animation-duration:20s}@keyframes waves{from{transform:translateX(0)}to{transform:translateX(120px)}}
+    .map-layer{position:relative;z-index:5;max-width:1180px;height:min(64vh,640px);min-height:450px;margin:0 auto;border:1px solid rgba(255,255,255,.22);border-radius:28px;overflow:hidden;background:radial-gradient(circle at 74% 64%,rgba(34,120,72,.95) 0 9%,rgba(31,103,68,.9) 10% 18%,transparent 19%),radial-gradient(circle at 29% 50%,rgba(46,120,62,.9) 0 5%,transparent 6%),linear-gradient(180deg,rgba(10,93,137,.24),rgba(0,33,58,.32));box-shadow:0 22px 60px rgba(0,0,0,.33)}
+    .route-svg{position:absolute;inset:0;width:100%;height:100%;z-index:2;pointer-events:none}.route-line{fill:none;stroke:rgba(255,235,160,.55);stroke-width:3;stroke-dasharray:10 10;filter:drop-shadow(0 0 5px rgba(255,207,64,.5))}.route-progress{fill:none;stroke:var(--gold);stroke-width:5;stroke-linecap:round;filter:drop-shadow(0 0 7px rgba(255,214,80,.8))}
+    .port{position:absolute;z-index:8;transform:translate(-50%,-50%);border:0;background:transparent;color:#fff;cursor:pointer;text-align:center;min-width:64px}.pin{display:grid;place-items:center;width:28px;height:28px;margin:0 auto 5px;border-radius:50%;background:#fff;color:#123;border:3px solid var(--gold);font-weight:900;box-shadow:0 0 0 6px rgba(247,201,72,.16),0 6px 16px rgba(0,0,0,.35)}.port span{display:block;font-size:12px;line-height:1.2;text-shadow:0 2px 5px #001;background:rgba(0,20,38,.6);padding:3px 6px;border-radius:8px;white-space:nowrap}.port.active .pin{background:var(--gold);transform:scale(1.2)}
+    .ship{position:absolute;z-index:10;width:90px;height:72px;transform:translate(-50%,-50%);transition:left 2.2s ease-in-out,top 2.2s ease-in-out;animation:shipBob 2.8s ease-in-out infinite;filter:drop-shadow(0 12px 12px rgba(0,0,0,.4))}.ship-body{position:absolute;bottom:9px;left:8px;width:76px;height:24px;background:linear-gradient(180deg,#7d3b17,#3a1c0d);border-radius:10px 10px 28px 28px}.ship-body:after{content:"";position:absolute;bottom:-6px;left:10px;width:58px;height:9px;background:rgba(255,255,255,.35);border-radius:50%;filter:blur(2px)}.mast{position:absolute;bottom:25px;left:43px;width:4px;height:44px;background:#3b1f12}.sail{position:absolute;bottom:31px;left:45px;width:0;height:0;border-top:22px solid transparent;border-bottom:22px solid transparent;border-right:34px solid #fff7df}.sail.back{left:11px;border-right:0;border-left:30px solid #f1e1bd;transform:scale(.82)}.flag-mini{position:absolute;bottom:66px;left:45px;width:22px;height:13px;background:#d32f2f;border-radius:2px}@keyframes shipBob{0%,100%{margin-top:0;rotate:-2deg}50%{margin-top:-9px;rotate:2deg}}
+    .controls{position:relative;z-index:30;display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:18px auto 0}.control-btn{border:0;border-radius:999px;padding:12px 22px;font-weight:900;font-size:18px;cursor:pointer;background:var(--gold);color:#1a1606;box-shadow:0 8px 24px rgba(0,0,0,.25)}.control-btn.secondary{background:rgba(255,255,255,.13);color:#fff;border:1px solid rgba(255,255,255,.25)}
+    .timeline-strip{position:relative;z-index:30;max-width:1180px;margin:16px auto 0;display:flex;gap:8px;overflow-x:auto;padding:8px}.time-chip{flex:0 0 auto;padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.16);font-size:14px;color:#e6f6ff}.time-chip.active{background:var(--gold);color:#1b1600;font-weight:900}
+    .info-modal{position:fixed;inset:0;background:rgba(0,0,0,.66);z-index:100;display:grid;place-items:center;padding:16px}.info-modal.hidden{display:none}.info-card{width:min(720px,96vw);max-height:90vh;overflow:auto;background:#081d32;color:#fff;border:1px solid rgba(255,255,255,.2);border-radius:26px;box-shadow:0 24px 80px rgba(0,0,0,.55);position:relative}.close-info{position:absolute;top:10px;left:10px;width:42px;height:42px;border-radius:50%;border:0;background:#fff;color:#102;font-size:28px;cursor:pointer}.info-image{width:100%;height:240px;object-fit:cover;background:#123;border-radius:26px 26px 0 0}.info-content{padding:22px}.info-content h2{font-size:36px;margin:0 0 6px;color:var(--gold)}.info-meta{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}.meta-box{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:12px;line-height:1.6}.meta-box strong{display:block;color:#fff2a8}.info-content p{font-size:20px;line-height:1.8}.open-page{display:inline-block;text-decoration:none;background:var(--gold);color:#1b1600;font-weight:900;border-radius:999px;padding:12px 20px;margin-top:10px}
+    .completion{position:absolute;z-index:40;inset:auto 18px 20px 18px;display:none;max-width:800px;margin:auto;text-align:center;background:rgba(2,20,36,.86);border:1px solid rgba(255,255,255,.2);border-radius:24px;padding:20px}.completion.show{display:block}.completion h2{color:var(--gold);font-size:34px;margin:0 0 8px}.completion p{font-size:19px;line-height:1.7}
+    @media(max-width:720px){.sim-links a{font-size:13px}.sim-shell{padding:10px}.map-layer{min-height:520px;border-radius:20px}.ship{width:76px}.port span{font-size:10px;max-width:88px;white-space:normal}.info-meta{grid-template-columns:1fr}.info-image{height:190px}.info-content h2{font-size:30px}.info-content p{font-size:18px}}
+  </style>
+</head>
+<body>
+<header class="sim-header">
+  <nav class="sim-nav">
+    <div class="sim-logo">מגלה העולם החדש הספרדי</div>
+    <div class="sim-links"><a href="../index.html">בית</a><a href="destinations.html">יעדים</a><a href="timeline.html">ציר זמן</a><a href="explorers.html">מגלים</a><a href="sources.html">מקורות</a></div>
+  </nav>
+  <section class="hero-title"><p class="eyebrow">סימולטור מסע כרונולוגי</p><h1>ספינת הגילויים</h1><p>הפלגה אינטראקטיבית בין תחנות העולם החדש — מן הקריביים, דרך שפך האמזונס, ועד אל דוראדו ואגם פרימה.</p></section>
+</header>
+
+<main class="sim-shell">
+  <div class="sky"><div class="sun"></div><div class="cloud c1"></div><div class="cloud c2"></div><div class="cloud c3"></div></div>
+  <div class="wave w3"></div><div class="wave w2"></div><div class="wave w1"></div>
+  <section class="map-layer" id="mapLayer">
+    <svg class="route-svg" id="routeSvg" viewBox="0 0 1000 600" preserveAspectRatio="none"><path id="routeLine" class="route-line" d=""/><path id="routeProgress" class="route-progress" d=""/></svg>
+    <div class="ship" id="ship" aria-label="ספינת מפרשים ספרדית"><div class="flag-mini"></div><div class="mast"></div><div class="sail back"></div><div class="sail"></div><div class="ship-body"></div></div>
+    <div class="completion" id="completion"><h2>המסע הושלם</h2><p>הספינה סיימה את מסלול הגילויים הכרונולוגי. אפשר להתחיל מחדש או לפתוח כל תחנה במפה.</p></div>
+  </section>
+  <div class="controls"><button class="control-btn" id="startBtn">▶️ התחל מסע</button><button class="control-btn secondary" id="prevBtn">הקודם</button><button class="control-btn secondary" id="nextBtn">הבא</button><button class="control-btn secondary" id="resetBtn">איפוס</button></div>
+  <div class="timeline-strip" id="timelineStrip"></div>
+</main>
+
+<div class="info-modal hidden" id="infoModal" role="dialog" aria-modal="true">
+  <article class="info-card"><button class="close-info" id="closeInfo">×</button><img class="info-image" id="infoImage" alt=""/><div class="info-content"><h2 id="infoTitle"></h2><div class="info-meta"><div class="meta-box"><strong>שנת גילוי</strong><span id="infoYear"></span></div><div class="meta-box"><strong>מגלה / מסע</strong><span id="infoExplorer"></span></div><div class="meta-box"><strong>שנות חיים</strong><span id="infoLife"></span></div><div class="meta-box"><strong>תחנה במסלול</strong><span id="infoIndex"></span></div></div><p id="infoSummary"></p><a class="open-page" id="openPage" href="#">📖 פתח ערך מלא</a></div></article>
+</div>
+
+<script src="../data/voyage-route.js"></script>
+<script>
+(function(){
+  const route = window.voyageRoute || voyageRoute;
+  const map = document.getElementById('mapLayer');
+  const ship = document.getElementById('ship');
+  const routeLine = document.getElementById('routeLine');
+  const routeProgress = document.getElementById('routeProgress');
+  const timeline = document.getElementById('timelineStrip');
+  const completion = document.getElementById('completion');
+  const modal = document.getElementById('infoModal');
+  const infoImage = document.getElementById('infoImage');
+  const infoTitle = document.getElementById('infoTitle');
+  const infoYear = document.getElementById('infoYear');
+  const infoExplorer = document.getElementById('infoExplorer');
+  const infoLife = document.getElementById('infoLife');
+  const infoIndex = document.getElementById('infoIndex');
+  const infoSummary = document.getElementById('infoSummary');
+  const openPage = document.getElementById('openPage');
+  let current = 0;
+  let autoTimer = null;
+
+  function toPath(points){return points.map((p,i)=>`${i?'L':'M'} ${p.x*10} ${p.y*6}`).join(' ')}
+  function setShip(i){const p=route[i];ship.style.left=p.x+'%';ship.style.top=p.y+'%'}
+  function drawProgress(i){routeProgress.setAttribute('d',toPath(route.slice(0,i+1)))}
+  function updateActive(){document.querySelectorAll('.port').forEach((b,idx)=>b.classList.toggle('active',idx===current));document.querySelectorAll('.time-chip').forEach((b,idx)=>b.classList.toggle('active',idx===current));setShip(current);drawProgress(current)}
+  function openStop(i){current=i;updateActive();const s=route[i];infoImage.src=s.image;infoImage.alt=s.name;infoTitle.textContent=s.name;infoYear.textContent=s.year;infoExplorer.textContent=s.explorer;infoLife.textContent=s.explorerLife;infoIndex.textContent=`${i+1} מתוך ${route.length}`;infoSummary.textContent=s.summary;openPage.href=s.detailPage;modal.classList.remove('hidden')}
+  function closeModal(){modal.classList.add('hidden')}
+  function next(open=true){if(current<route.length-1){current++;updateActive();if(open)openStop(current)}else{completion.classList.add('show')}}
+  function prev(){if(current>0){current--;openStop(current)}}
+  function reset(){clearInterval(autoTimer);autoTimer=null;current=0;completion.classList.remove('show');updateActive();closeModal()}
+  function start(){clearInterval(autoTimer);completion.classList.remove('show');openStop(current);autoTimer=setInterval(()=>{closeModal();if(current>=route.length-1){clearInterval(autoTimer);autoTimer=null;completion.classList.add('show');return}current++;updateActive();setTimeout(()=>openStop(current),2300)},5200)}
+
+  routeLine.setAttribute('d',toPath(route));
+  route.forEach((p,i)=>{const btn=document.createElement('button');btn.className='port';btn.style.left=p.x+'%';btn.style.top=p.y+'%';btn.innerHTML=`<b class="pin">${i+1}</b><span>${p.year}<br>${p.name}</span>`;btn.addEventListener('click',()=>openStop(i));map.appendChild(btn);const chip=document.createElement('button');chip.className='time-chip';chip.textContent=`${p.year} · ${p.name}`;chip.addEventListener('click',()=>openStop(i));timeline.appendChild(chip)});
+  document.getElementById('startBtn').addEventListener('click',start);document.getElementById('nextBtn').addEventListener('click',()=>next(true));document.getElementById('prevBtn').addEventListener('click',prev);document.getElementById('resetBtn').addEventListener('click',reset);document.getElementById('closeInfo').addEventListener('click',closeModal);modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});
+  setShip(0);drawProgress(0);updateActive();
+})();
+</script>
+</body>
+</html>
