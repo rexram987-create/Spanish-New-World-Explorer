@@ -47,7 +47,7 @@
         <a class="secondary-link" href="pages/destinations.html">התחל ביעדים</a>
         <a class="secondary-link" href="pages/timeline.html">עבור לציר הזמן</a>
       </div>
-      <button id="installBtn" class="install-button" hidden>התקנת היישום</button>
+      <button id="installBtn" class="install-button">📲 התקנת היישום</button><p id="installHint" class="install-hint" hidden></p>
       <figure class="home-hero-image-wrap">
         <img class="home-hero-image" src="assets/home/hero-spanish-exploration-galleon.jpg" alt="ספינת גילוי ספרדית מפליגה באוקיינוס האטלנטי" />
         <figcaption class="home-hero-caption">ספינת גילוי ספרדית באוקיינוס — שער חזותי למסעות העולם החדש</figcaption>
@@ -90,14 +90,20 @@
       event.preventDefault();
       deferredPrompt = event;
       installBtn.hidden = false;
+      document.getElementById('installHint').hidden = true;
     });
 
     installBtn.addEventListener('click', async () => {
-      if (!deferredPrompt) return;
-      deferredPrompt.prompt();
-      await deferredPrompt.userChoice;
-      deferredPrompt = null;
-      installBtn.hidden = true;
+      const hint = document.getElementById('installHint');
+      if (deferredPrompt) {
+        deferredPrompt.prompt();
+        await deferredPrompt.userChoice;
+        deferredPrompt = null;
+        installBtn.hidden = true;
+        return;
+      }
+      hint.hidden = false;
+      hint.textContent = 'אם חלון ההתקנה לא נפתח: פתח את תפריט ⋮ של Chrome ובחר „התקנת אפליקציה” או „הוספה למסך הבית”.';
     });
 
     window.addEventListener('appinstalled', () => {
