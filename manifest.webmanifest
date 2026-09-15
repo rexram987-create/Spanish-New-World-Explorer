@@ -1,0 +1,15 @@
+{
+  "name": "מגלה העולם החדש הספרדי",
+  "short_name": "Spanish Explorer",
+  "description": "יישום PWA אינטראקטיבי על מסעות הגילוי הספרדיים בעולם החדש",
+  "lang": "he",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#06111b",
+  "theme_color": "#071725",
+  "icons": [
+    {"src": "assets/home/hero-spanish-exploration-galleon.jpg", "sizes": "any", "type": "image/jpeg", "purpose": "any"}
+  ]
+}
