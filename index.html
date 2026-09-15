@@ -2,13 +2,17 @@
 <html lang="he" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#071725" />
+  <meta name="description" content="יישום אינטראקטיבי על מסעות הגילוי הספרדיים בעולם החדש" />
+  <link rel="manifest" href="manifest.webmanifest" />
   <title>מגלה העולם החדש הספרדי</title>
   <link rel="stylesheet" href="style.css" />
   <style>
     .home-hero-image-wrap{max-width:1120px;margin:26px auto 0;border-radius:28px;overflow:hidden;border:1px solid rgba(255,255,255,.18);box-shadow:0 24px 70px rgba(0,0,0,.38);background:#071d33}
     .home-hero-image{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
     .home-hero-caption{margin:0;padding:10px 14px;text-align:center;color:#dcecff;font-size:15px;background:rgba(7,29,51,.72)}
+    .install-button{margin-top:14px;padding:14px 22px;border:none;border-radius:999px;background:#f2b84b;color:#1b1303;font-weight:800;font-size:1rem}
     @media(max-width:720px){.home-hero-image-wrap{margin-top:18px;border-radius:18px}.home-hero-caption{font-size:13px}}
   </style>
 </head>
@@ -29,7 +33,7 @@
     </nav>
 
     <section class="hero-content">
-      <p class="eyebrow">מוזיאון היסטורי אינטראקטיבי</p>
+      <p class="eyebrow">PWA • מוזיאון היסטורי אינטראקטיבי</p>
       <h1>מסע בעקבות מסעות הגילוי הספרדיים בעולם החדש</h1>
       <p>
         פרויקט חינוכי חינמי המציג את מסעות הגילוי הספרדיים, היעדים ההיסטוריים,
@@ -41,6 +45,7 @@
         <a class="secondary-link" href="pages/destinations.html">התחל ביעדים</a>
         <a class="secondary-link" href="pages/timeline.html">עבור לציר הזמן</a>
       </div>
+      <button id="installBtn" class="install-button" hidden>התקנת היישום</button>
       <figure class="home-hero-image-wrap">
         <img class="home-hero-image" src="assets/home/hero-spanish-exploration-galleon.jpg" alt="ספינת גילוי ספרדית מפליגה באוקיינוס האטלנטי" />
         <figcaption class="home-hero-caption">ספינת גילוי ספרדית באוקיינוס — שער חזותי למסעות העולם החדש</figcaption>
@@ -52,9 +57,8 @@
     <section class="section">
       <h2>מבוא לפרויקט</h2>
       <p>
-        דף הבית משמש כמבוא בלבד. כל נושא באתר יקבל דף עצמאי משלו:
-        יעדים, ציר זמן, מגלים, גלריית מגלים, מפות, מקורות וסימולטור מסע אינטראקטיבי. כך ניתן יהיה להרחיב את הפרויקט
-        בהדרגה בלי להעמיס את כל המידע על עמוד אחד.
+        דף הבית משמש כמבוא בלבד. כל נושא באתר מקבל דף עצמאי משלו:
+        יעדים, ציר זמן, מגלים, גלריית מגלים, מפות, מקורות וסימולטור מסע אינטראקטיבי.
       </p>
     </section>
 
@@ -75,5 +79,33 @@
   <footer>
     <p>מגלה העולם החדש הספרדי — פרויקט חינוכי חינמי.</p>
   </footer>
+
+  <script>
+    let deferredPrompt;
+    const installBtn = document.getElementById('installBtn');
+
+    window.addEventListener('beforeinstallprompt', event => {
+      event.preventDefault();
+      deferredPrompt = event;
+      installBtn.hidden = false;
+    });
+
+    installBtn.addEventListener('click', async () => {
+      if (!deferredPrompt) return;
+      deferredPrompt.prompt();
+      await deferredPrompt.userChoice;
+      deferredPrompt = null;
+      installBtn.hidden = true;
+    });
+
+    window.addEventListener('appinstalled', () => {
+      installBtn.hidden = true;
+      deferredPrompt = null;
+    });
+
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js'));
+    }
+  </script>
 </body>
 </html>
