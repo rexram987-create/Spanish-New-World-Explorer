@@ -518,3 +518,12 @@ main { width: 100%; }
 @media (max-width:390px) {
   .portal-grid { grid-template-columns:1fr; }
 }
+
+.install-hint{max-width:560px;margin:10px auto 0;color:var(--muted);font-size:.95rem;line-height:1.55}
+@media(max-width:680px){
+  .top-nav{overflow:hidden}
+  .nav-links{direction:rtl;justify-content:flex-start;overscroll-behavior-inline:contain}
+  .nav-links a{scroll-snap-align:start}
+  .nav-links{scroll-snap-type:x proximity}
+  .install-button{display:flex;align-items:center;justify-content:center;margin:14px auto 0}
+}
